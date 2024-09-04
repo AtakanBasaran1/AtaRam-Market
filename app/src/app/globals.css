@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+
+#pc {
+    animation: slideInFromRight 1s ease forwards;
+}
+
+#sepet {
+    animation: slideInFromRight 0.5s ease forwards;
+}
+
+#search {
+    animation: slideInFromUp 0.5s ease forwards;
+}
+
+#button {
+    animation: slideInFromRight 1.3s ease forwards;
+}
+
+#h1 {
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+#h2 {
+    animation: slideInFromLeft 1.3s ease forwards;
+}
+
+#ilk-ürünler {
+    animation: slideInFromRight 2s ease forwards;
+}
+
+#ikinci-ürünler {
+    animation: slideInFromLeft 2.3s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromUp {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
