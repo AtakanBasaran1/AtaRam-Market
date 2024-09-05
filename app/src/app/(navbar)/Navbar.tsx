@@ -96,9 +96,9 @@ const Navbar = () => {
 
 
 
-            <div className='bg-black-500     h-[78px]  mt-[626px] ml-[0px] text-[20px]  sm:w-[500px] sm:h-[50px] sm:absolute sm:mt-[8px] sm:ml-[550px]'>
+            <div className='bg-black-500     h-[78px]  mt-[626px] ml-[-80px] text-[20px]  sm:w-[500px] sm:h-[50px] sm:absolute sm:mt-[8px] sm:ml-[550px]'>
                 <div className='mt-[-20px] sm:mt-[0px] ml-[80px]'>
-                    <hr className='w-[535px] ml-[-80px] mt-5 fixed sm:hidden' />
+                    <hr className='w-[535px] ml-[0px] mt-5 fixed sm:hidden' />
                     <Link className='text-[12px] top-[32px] left-5 relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/">
                         <CiHome className='sm:hidden text-[28px] ml-3 relative' />
                         Ana Sayfa
