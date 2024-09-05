@@ -40,26 +40,6 @@ body {
     animation: slideInFromLeft 2.3s ease forwards;
 }
 
-/* Ekran genişliği 768px veya daha küçük ve ekran yüksekliği 800px veya daha küçük olduğunda */
-/* Küçük Cihazlar (Telefonlar) */
-@media only screen and (max-width: 480px) {
-    /* Telefonlar için CSS */
-}
-
-/* Orta Cihazlar (Tabletler) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Tabletler için CSS */
-}
-
-/* Büyük Cihazlar (Dizüstü ve Masaüstü Bilgisayarlar) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Dizüstü ve masaüstü için CSS */
-}
-
-/* Ekstra Büyük Cihazlar (Büyük Masaüstü Monitörler) */
-@media only screen and (min-width: 1025px) {
-    /* Büyük monitörler için CSS */
-}
 
 
 @keyframes slideInFromLeft {

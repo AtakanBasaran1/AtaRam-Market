@@ -85,7 +85,7 @@ export default function Home() {
       {/* ÜRÜNLER BAŞLANGIÇ */}
 
 
-      <div id='ilk-ürünler' className='flex flex-col mt-[-200px] ml-[-30px]'>
+      <div id='ilk-ürünler' className='  mt-[-200px] ml-[-30px]'>
 
         <div className='flex flex-row'>
 

@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
 
-            <div className='bg-black-500 h-[78px]  mt-[655px] text-[20px]  sm:w-[500px] sm:h-[50px] sm:absolute sm:mt-[8px] sm:ml-[550px]'>
+            <div className='fixed bg-black-500 h-[78px]  mt-[548px] text-[20px]  sm:w-[500px] sm:h-[50px] sm:absolute sm:mt-[8px] sm:ml-[550px]'>
                 <div className='mt-[-20px] sm:mt-[0px] ml-[40px]'>
                     <hr className='w-[485px] ml-[-80px] mt-5 fixed sm:hidden' />
                     <Link className='text-[12px] top-[32px] left-5 relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/">
