@@ -48,7 +48,7 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div className='absolute z-10'>
 
       <div className='mt-[0px]'>
         <div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
