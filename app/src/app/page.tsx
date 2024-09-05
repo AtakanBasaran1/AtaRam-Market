@@ -44,9 +44,6 @@ export default function Home() {
     window.location.href = "/tüm-ürünler"
   }
 
-  const favorites = () => {
-    window.location.href = "/favoriler"
-  }
 
 
 
