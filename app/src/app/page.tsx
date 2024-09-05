@@ -84,6 +84,7 @@ export default function Home() {
 
       {/* ÜRÜNLER BAŞLANGIÇ */}
 
+
       <div id='ilk-ürünler' className='flex flex-col mt-[-200px] ml-[-30px]'>
 
         <div className='flex flex-row'>
@@ -197,6 +198,9 @@ export default function Home() {
         </div>
 
       </div>
+
+
+
 
       <div className='ml-[600px] mt-[900px]'>
         <hr className='w-[300px]' />
