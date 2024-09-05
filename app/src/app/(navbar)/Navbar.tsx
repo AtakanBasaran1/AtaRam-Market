@@ -56,7 +56,7 @@ const Navbar = () => {
                 <div className='sm:flex sm:flex-row sm:ml-[830px]'>
 
                     <div>
-                        <IoSearchOutline onClick={searchOpen} className='ml-[370px] text-[38px] mt-3 sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
+                        <IoSearchOutline onClick={searchOpen} className='ml-[300px] text-[38px] mt-3 sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
                     </div>
 
                     {search ? (
@@ -82,7 +82,7 @@ const Navbar = () => {
 
                     </div>
 
-                    <CiShoppingBasket onClick={sepetOpen} className='ml-[420px] text-[40px] absolute mt-[-30px] sm:text-[45px] sm:hover:text-blue-500 sm:cursor-pointer sm:ml-[-150px] sm:mt-4 sm:relative sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
+                    <CiShoppingBasket onClick={sepetOpen} className='ml-[350px] text-[40px] absolute mt-[-30px] sm:text-[45px] sm:hover:text-blue-500 sm:cursor-pointer sm:ml-[-150px] sm:mt-4 sm:relative sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
                 </div>
 
                 {sepet ? (
@@ -96,9 +96,9 @@ const Navbar = () => {
 
 
 
-            <div className='bg-black-500 fixed h-[78px]  mt-[800px]  text-[20px]  sm:w-[500px] sm:h-[50px] sm:absolute sm:mt-[8px] sm:ml-[550px]'>
-                <div className='mt-[-10px] sm:mt-[0px] ml-[50px]'>
-                    <hr className='w-[430px] ml-[-50px] mt-4 fixed sm:hidden' />
+            <div className='bg-black-500 h-[78px]  mt-[626px] text-[20px]  sm:w-[500px] sm:h-[50px] sm:absolute sm:mt-[8px] sm:ml-[550px]'>
+                <div className='mt-[-5px]  sm:mt-[0px] ml-[40px]'>
+                    <hr className='w-[485px] ml-[-80px] mt-5 fixed sm:hidden' />
                     <Link className='text-[12px] top-[32px] left-5 relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/">
                         <CiHome className='sm:hidden text-[28px] ml-3 relative' />
                         Ana Sayfa
