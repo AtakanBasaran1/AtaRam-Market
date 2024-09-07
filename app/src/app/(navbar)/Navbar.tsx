@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
 
-            <div className='fixed bottom-0 w-full bg-black py-2 sm:hidden'>
+            <div className='fixed  bottom-0 left-0 w-full bg-black py-2 z-50'>
                 <div className='flex justify-around items-center'>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/">
                         <CiHome className='text-2xl sm:hidden' />
