@@ -53,27 +53,27 @@ export default function Home() {
       <aside className='mt-[0px]'>
         <div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
           <img id='pc'
-            className='w-[700px] absolute h-[380px] mt-[-40px] '
+            className='w-[200px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
             src={pc2.src}
             alt="" />
         </div>
         <button id='button' onClick={product1Detail}
-          className='mt-[600px] absolute w-[500px] border-gray-700 rounded-[30px] h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none ml-[850px]'>
+          className='w-[150px] h-[30px] mt-[480px] ml-[105px] sm:mt-[600px] absolute sm:w-[500px] border-gray-700 rounded-[30px] sm:h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none sm:ml-[850px]'>
           <p className='text-[20px] font-bold'>Ürüne Git</p>
         </button>
         <h1 id='h1'
-          className='text-[80px] mt-[200px] ml-[200px] absolute font-bold'
-        ><span className='ml-6'>ACER Nitro 5</span> <br /> 12% İndirimde!</h1>
+          className='text-[24px] mt-[100px] ml-[120px] sm:text-[80px] sm:mt-[200px] sm:ml-[200px] absolute font-bold'
+        ><span className='text-[24px] sm:text-[80px] mt-[150px] ml-15'>ACER Nitro 5</span> <br /> 12% İndirimde!</h1>
         <h2 id='h2'
-          className='text-[120px] text-yellow-500 font-bold mt-[460px] ml-[230px] absolute'
+          className='text-[30px] ml-[132px] mt-[180px] sm:text-[120px] text-yellow-500 font-bold sm:mt-[460px] sm:ml-[230px] absolute'
         >28.999₺</h2>
       </aside>
 
       <div className='flex flex-row'>
-        <div className='flex flex-row ml-[-60px] mt-[610px]'>
-          <hr className='w-[400px] mt-[145px] ml-[300px]' />
-          <p className='mt-[130px] ml-[740px] absolute font-bold'>AtaRam & Market</p>
-          <hr className='w-[400px] mt-[145px] ml-[200px]' />
+        <div className='ml-3 flex flex-row sm:ml-[-60px] sm:mt-[610px]'>
+          <hr className='w-[100px] mt-[625px] ml-5 sm:w-[400px] sm:mt-[145px] sm:ml-[300px]' />
+          <p className='text-[12px] mt-[616px] sm:text-[17px] ml-[130px] sm:mt-[130px] sm:ml-[740px] absolute font-bold'>AtaRam & Market</p>
+          <hr className=' w-[100px] mt-[625px] ml-[110px] sm:w-[400px] sm:mt-[145px] sm:ml-[200px]' />
         </div>
       </div>
 

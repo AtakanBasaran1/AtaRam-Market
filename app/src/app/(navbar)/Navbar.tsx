@@ -45,7 +45,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className='fixed z-50 sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
+        <nav id='nav' className='fixed z-50 sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
 
             <div className='sm:flex sm:flex-row'>
 
@@ -54,14 +54,14 @@ const Navbar = () => {
                 </span>
 
 
-                <div className='sm:flex sm:flex-row sm:ml-[830px]'>
+                <div className='sm:flex sm:flex-row mt-2 sm:ml-[810px]'>
 
                     <div>
                         <IoSearchOutline onClick={searchOpen} className='ml-[220px] text-[25px] mt-[18px] sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
                     </div>
 
                     {search ? (
-                        <div id='search' className='sm:absolute sm:z-10 sm:bg-black sm:rounded-b-[100px] sm:w-[1519px] sm:h-[145px] sm:ml-[-830px]'>
+                        <div id='search' className='sm:absolute z-50 sm:z-90 sm:bg-black sm:rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-8px]'>
 
                             <input
                                 className='sm:w-[1000px] sm:ml-[260px] sm:mt-[45px] sm:h-[50px] sm:border-2 sm:border-gray-800 sm:bg-black sm:rounded-[200px] sm:placeholder:text-[25px] sm:pl-5'
@@ -94,27 +94,27 @@ const Navbar = () => {
                     </div>
                 ) : null}
 
-                <hr className='w-[483px] mt-10 sm:bg-white sm:border-[0,5px] absolute sm:top-[55px] sm:w-[1450px] sm:ml-[45px]' />
+                <hr className='w-[483px] mt-10 k border-gray-700 sm:border-[0,5px] absolute sm:top-[55px] sm:w-[1450px] sm:ml-[35px]' />
             </div>
 
 
 
-            <div className='fixed sm:block hidden mt-[200px] left-0 w-[350px] bg-black py-2 z-50'>
+            <div className='fixed sm:block hidden mt-[30px] left-[580px] w-[350px] py-2'>
                 <div className='flex justify-around items-center'>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/">
-                        <CiHome className='text-2xl sm:hidden' />
+
                         <span className='ml-2 sm:ml-0'>Ana Sayfa</span>
                     </Link>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/tüm-ürünler">
-                        <AiOutlineProduct className='text-2xl sm:hidden' />
+
                         <span className='ml-2 sm:ml-0'>Tüm Ürünler</span>
                     </Link>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/hakkimizda">
-                        <MdArticle className='text-2xl sm:hidden' />
+
                         <span className='ml-2 sm:ml-0'>Hakkımızda</span>
                     </Link>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/iletisim">
-                        <MdContactEmergency className='text-2xl sm:hidden' />
+
                         <span className='ml-2 sm:ml-0'>İletişim</span>
                     </Link>
                 </div>
