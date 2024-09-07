@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
 
                     {search ? (
-                        <div id='search' className='w-[400px] h-[50px] ml-[-10px] absolute z-50 bg-black rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-8px]'>
+                        <div id='search' className='w-[400px] h-[50px] ml-[-20px] absolute z-50 bg-black rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-8px]'>
 
                             <input
                                 className='w-[250px] ml-[70px] mt-3 sm:w-[1000px] sm:ml-[260px] sm:mt-[45px] sm:h-[50px] border-2 border-gray-800 bg-black rounded-[200px] placeholder:text-[14px] sm:placeholder:text-[25px] pl-5'
@@ -90,7 +90,10 @@ const Navbar = () => {
 
                 {sepet ? (
                     <div id='sepet' className='bg-black mt-[-30px] w-[250px] h-[670px] ml-[125px] sm:w-[400px] sm:h-[780px] sm:ml-[1120px] sm:mt-0 z-10 fixed rounded-l-[130px]'>
-                        <IoIosClose onClick={sepetClose} className='cursor-pointer text-[25px] ml-[220px] mt-2  sm:text-[50px] sm:ml-[345px] hover:text-red-600 transition-transform duration-200 transform hover:scale-125' />
+                        <IoIosClose
+                            onClick={sepetClose}
+                            className='cursor-pointer text-[25px] ml-[220px] mt-2 sm:text-[50px] sm:ml-[345px] hover:text-red-600 transition-transform duration-200 transform hover:scale-125'
+                        />
                     </div>
                 ) : null}
 
