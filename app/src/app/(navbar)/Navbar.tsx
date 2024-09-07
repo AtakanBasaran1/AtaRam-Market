@@ -49,14 +49,14 @@ const Navbar = () => {
 
             <div className='sm:flex sm:flex-row'>
 
-                <p onClick={logoClick} className='absolute text-[30px] w-[220px] mt-1 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
+                <p onClick={logoClick} className='absolute text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
                     AtaRam & Market
                 </p>
 
                 <div className='sm:flex sm:flex-row sm:ml-[830px]'>
 
                     <div>
-                        <IoSearchOutline onClick={searchOpen} className='ml-[280px] text-[38px] mt-3 sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
+                        <IoSearchOutline onClick={searchOpen} className='ml-[280px] text-[25px] mt-4 sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
                     </div>
 
                     {search ? (
@@ -82,7 +82,7 @@ const Navbar = () => {
 
                     </div>
 
-                    <CiShoppingBasket onClick={sepetOpen} className='ml-[325px] text-[40px] absolute mt-[-30px] sm:text-[45px] sm:hover:text-blue-500 sm:cursor-pointer sm:ml-[-150px] sm:mt-4 sm:relative sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
+                    <CiShoppingBasket onClick={sepetOpen} className='ml-[315px] text-[26px] absolute mt-[-25px] sm:text-[45px] sm:hover:text-blue-500 sm:cursor-pointer sm:ml-[-150px] sm:mt-4 sm:relative sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
                 </div>
 
                 {sepet ? (
@@ -96,22 +96,22 @@ const Navbar = () => {
 
 
 
-            <div className=' bg-black-500 h-[78px]  mt-[548px]  sm:w-[500px] sm:h-[50px] sm:absolute  sm:mt-[12px] sm:ml-[480px]'>
+            <div className=' bg-black-500 h-[78px]  mt-[650px]  sm:w-[500px] sm:h-[50px] sm:absolute  sm:mt-[12px] sm:ml-[480px]'>
                 <div className='mt-[-20px] sm:mt-[0px] ml-[75px]'>
                     <hr className='w-[485px] ml-[-80px] mt-5 fixed sm:hidden' />
-                    <Link className='text-[12px] sm:text-[17px] top-[32px] left-5 relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/">
+                    <Link className='text-[12px] sm:text-[17px] top-[35px] left-5 relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/">
                         <CiHome className='sm:hidden text-[28px] ml-3 relative' />
                         Ana Sayfa
 
                     </Link>
-                    <Link className='text-[12px] sm:text-[17px] top-[-26px] left-[90px] relative sm:relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/tüm-ürünler">
+                    <Link className='text-[12px] sm:text-[17px] top-[-17px] left-[90px] relative sm:relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/tüm-ürünler">
                         <AiOutlineProduct className='sm:hidden text-[28px] left-[20px] top-[0px] relative' />
                         Tüm Ürünler
                     </Link>
-                    <Link className='relative text-[12px] sm:text-[17px] left-[170px] top-[-84px] sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:hover:text-blue-400' href="/hakkimizda">
+                    <Link className='relative text-[12px] sm:text-[17px] left-[170px] top-[-69px] sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:hover:text-blue-400' href="/hakkimizda">
                         <MdArticle className='sm:hidden text-[28px] left-[16px] top-[0px] relative' />
                         Hakkımızda</Link>
-                    <Link className='relative top-[-141px] sm:text-[17px] left-[250px] text-[12px] sm:top-[15px] sm:left-[40px] sm:text-white sm:font-semibold sm:hover:text-blue-400' href="/iletisim">
+                    <Link className='relative top-[-121px] sm:text-[17px] left-[250px] text-[12px] sm:top-[15px] sm:left-[40px] sm:text-white sm:font-semibold sm:hover:text-blue-400' href="/iletisim">
                         <MdContactEmergency className='sm:hidden text-[28px] left-[5px] top-[0px] relative' />
                         İletişim</Link>
                 </div>
