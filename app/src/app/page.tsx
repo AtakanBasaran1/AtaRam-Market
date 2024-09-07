@@ -53,12 +53,12 @@ export default function Home() {
       <aside className='mt-[0px]'>
         <div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
           <img id='pc'
-            className='w-[200px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
+            className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
             src={pc2.src}
             alt="" />
         </div>
         <button id='button' onClick={product1Detail}
-          className='w-[150px] h-[30px] mt-[480px] ml-[105px] sm:mt-[600px] absolute sm:w-[500px] border-gray-700 rounded-[30px] sm:h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none sm:ml-[850px]'>
+          className='w-[200px] h-[30px] mt-[480px] ml-[85px] sm:mt-[600px] absolute sm:w-[500px] border-gray-700 rounded-[30px] sm:h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none sm:ml-[850px]'>
           <p className='text-[20px] font-bold'>Ürüne Git</p>
         </button>
         <h1 id='h1'
@@ -71,49 +71,85 @@ export default function Home() {
 
       <div className='flex flex-row'>
         <div className='ml-3 flex flex-row sm:ml-[-60px] sm:mt-[610px]'>
-          <hr className='w-[100px] mt-[625px] ml-5 sm:w-[400px] sm:mt-[145px] sm:ml-[300px]' />
-          <p className='text-[12px] mt-[616px] sm:text-[17px] ml-[130px] sm:mt-[130px] sm:ml-[740px] absolute font-bold'>AtaRam & Market</p>
+          <hr className='w-[100px] mt-[625px] ml-3 sm:w-[400px] sm:mt-[145px] sm:ml-[300px]' />
+          <p className='text-[12px] mt-[616px] sm:text-[17px] ml-[125px] sm:mt-[130px] sm:ml-[740px] absolute font-bold'>AtaRam & Market</p>
           <hr className=' w-[100px] mt-[625px] ml-[110px] sm:w-[400px] sm:mt-[145px] sm:ml-[200px]' />
         </div>
       </div>
 
-      <div className='ml-[600px] mt-[100px]'>
-        <h1 className='text-[35px] font-bold'>EN ÇOK SATANLAR</h1>
-        <hr className='w-[400px] ml-[-60px] mt-4' />
+      <div className='sm:ml-[500px] sm:mt-[100px]'>
+        <h1 className='text-[16px] ml-[115px] mt-10 sm:text-[35px] font-bold'>EN ÇOK SATANLAR</h1>
+        <hr className='w-[180px] ml-[86px] mt-3 sm:w-[400px] sm: sm:ml-[60px] sm:mt-4' />
       </div>
 
       {/* ÜRÜNLER BAŞLANGIÇ */}
 
 
-      <section id='ilk-ürünler' className='flex flex-col mt-[-200px] ml-[-30px]'>
+      <section id='ilk-ürünler' className=' flex flex-row sm:flex-col mt-[-200px] ml-[-30px]'>
 
-        <div className='flex flex-row'>
+        <div className='flex flex-col sm:flex-row'>
 
           <div className='mt-[-100px] ml-[-80px]'>
-            <div className='w-[400px] h-[350px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[200px] absolute mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+            <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
               <img
-                className='w-[280px] h-[300px] mt-[-20px] '
+                className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                 src={tshirt1.src}
                 alt=""
               /></div>
-            <h1 className='mt-[760px] text-white ml-[300px] absolute text-[24px] font-bold'> Chuba Tshirt /
-              <span className='text-[28px] text-yellow-500'> 640₺</span>
+            <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Chuba Tshirt /
+              <span className='sm:text-[28px] text-yellow-500'> 640₺</span>
             </h1>
-            <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
+            <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
             <button
-              className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[320px]'>
-              <p className='text-[20px] font-bold'>Ürüne Git</p>
+              className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
+              <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
 
-          <div className='mt-[-100px] ml-[450px]'>
-            <div className=' w-[400px] h-[350px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[200px] absolute mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+          <div className='mt-[380px] ml-[-80px]'>
+            <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
               <img
-                className='w-[280px] h-[300px] mt-[-20px] '
+                className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
+                src={sort.src}
+                alt=""
+              /></div>
+            <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Chuba Tshirt /
+              <span className='sm:text-[28px] text-yellow-500'> 640₺</span>
+            </h1>
+            <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
+            <button
+              className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
+              <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
+            </button>
+          </div>
+
+          <div className='mt-[380px] ml-[-80px]'>
+            <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <img
+                className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
+                src={tshirt3.src}
+                alt=""
+              /></div>
+            <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Chuba Tshirt /
+              <span className='sm:text-[28px] text-yellow-500'> 640₺</span>
+            </h1>
+            <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
+            <button
+              className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
+              <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
+            </button>
+          </div>
+
+
+
+          <div className='mt-[-100px] ml-[450px]'>
+            <div className=' sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <img
+                className='sm:w-[280px] sm:h-[300px] sm:mt-[-20px] '
                 src={sort.src}
                 alt="" />
             </div>
-            <h1 className='mt-[760px] text-white ml-[320px] absolute text-[24px] font-bold'> Fluer Şort /
+            <h1 className='sm:mt-[760px] text-white sm:ml-[320px] absolute text-[24px] font-bold'> Fluer Şort /
               <span className='text-[28px] text-yellow-500'> 412₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
