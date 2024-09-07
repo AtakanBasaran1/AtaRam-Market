@@ -49,14 +49,15 @@ const Navbar = () => {
 
             <div className='sm:flex sm:flex-row'>
 
-                <p onClick={logoClick} className=' absolute text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
+                <span onClick={logoClick} className=' absolute text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
                     <p> AtaRam & Market</p>
-                </p>
+                </span>
+
 
                 <div className='sm:flex sm:flex-row sm:ml-[830px]'>
 
                     <div>
-                        <IoSearchOutline onClick={searchOpen} className='ml-[280px] text-[25px] mt-4 sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
+                        <IoSearchOutline onClick={searchOpen} className='ml-[220px] text-[25px] mt-[18px] sm:text-[40px] sm:ml-[400px] sm:mt-5 absolute sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:cursor-pointer' />
                     </div>
 
                     {search ? (
@@ -72,17 +73,19 @@ const Navbar = () => {
                         </div>
                     ) : null}
 
-                    <IoIosHeartEmpty onClick={favorites} className='mt-[300px] sm:text-[40px] absolute sm:cursor-pointer sm:ml-[450px] sm:mt-5 sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-red-500' />
+                    <IoIosHeartEmpty onClick={favorites} className='mt-[18px] text-[24px] ml-[285px] sm:text-[40px] absolute sm:cursor-pointer sm:ml-[450px] sm:mt-5 sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-red-500' />
 
                     <div className='top-[300px] sm:top-[0px] sm:cursor-pointer sm:ml-[520px] relative sm:w-[130px] sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:hover:text-blue-500 sm:max-w-[130px]'>
 
-                        <IoPersonOutline className='sm:text-[32px] sm:sm:text-[35px] sm:ml-[40px] sm:mt-[20px]' />
 
-                        <p className='sm:text-[14px] sm:sm:mt-[-29px] sm:font-bold sm:ml-[78px] sm:mt-[-17px]'>Giriş Yap</p>
+                        <IoPersonOutline className='text-[23px]  relative ml-[320px] top-[-282px]   ' />
+                        <IoPersonOutline className='sm:block hidden absolute text-[36px] mt-[-2px] ml-8 ' />
+
+                        <p className='hidden sm:block sm:text-[14px] sm:mt-[5px] sm:font-bold sm:ml-[75px] sm:mt-[-17px]'>Giriş Yap</p>
 
                     </div>
 
-                    <CiShoppingBasket onClick={sepetOpen} className='ml-[315px] text-[26px] absolute mt-[-25px] sm:text-[45px] sm:hover:text-blue-500 sm:cursor-pointer sm:ml-[-150px] sm:mt-4 sm:relative sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
+                    <CiShoppingBasket onClick={sepetOpen} className='ml-[250px] text-[28px] absolute mt-[-7px] sm:text-[45px] sm:hover:text-blue-500 sm:cursor-pointer sm:ml-[-150px] sm:mt-4 sm:relative sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
                 </div>
 
                 {sepet ? (
@@ -91,12 +94,12 @@ const Navbar = () => {
                     </div>
                 ) : null}
 
-                <hr className='w-[483px] mt-5 sm:bg-white sm:border-[0,5px] absolute sm:top-[55px] sm:w-[1450px] sm:ml-[45px]' />
+                <hr className='w-[483px] mt-10 sm:bg-white sm:border-[0,5px] absolute sm:top-[55px] sm:w-[1450px] sm:ml-[45px]' />
             </div>
 
 
 
-            <div className='fixed mt-[200px] left-0 w-[350px] bg-black py-2 z-50'>
+            <div className='fixed sm:block hidden mt-[200px] left-0 w-[350px] bg-black py-2 z-50'>
                 <div className='flex justify-around items-center'>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/">
                         <CiHome className='text-2xl sm:hidden' />
