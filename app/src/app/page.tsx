@@ -48,15 +48,14 @@ export default function Home() {
 
 
   return (
-    <div>
-
+    <div className='overscroll-x-none	'>
       <aside className='mt-[0px]'>
-        <div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+        < div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer' >
           <img id='pc'
             className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
             src={pc2.src}
             alt="" />
-        </div>
+        </ div>
         <button id='button' onClick={product1Detail}
           className='w-[200px] h-[30px] mt-[480px] ml-[85px] sm:mt-[600px] absolute sm:w-[500px] border-gray-700 rounded-[30px] sm:h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none sm:ml-[850px]'>
           <p className='text-[20px] font-bold'>Ürüne Git</p>
@@ -67,7 +66,7 @@ export default function Home() {
         <h2 id='h2'
           className='text-[30px] ml-[130px] mt-[180px] sm:text-[120px] text-yellow-500 font-bold sm:mt-[460px] sm:ml-[230px] absolute'
         >28.999₺</h2>
-      </aside>
+      </aside >
 
       <div className='flex flex-row'>
         <div className='ml-3 flex flex-row sm:ml-[-60px] sm:mt-[610px]'>
@@ -218,6 +217,6 @@ export default function Home() {
       </div>
 
 
-    </div>
+    </div >
   );
 }

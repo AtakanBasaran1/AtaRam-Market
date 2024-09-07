@@ -61,15 +61,15 @@ const Navbar = () => {
                     </div>
 
                     {search ? (
-                        <div id='search' className='sm:absolute z-50 sm:z-90 sm:bg-black sm:rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-8px]'>
+                        <div id='search' className='w-[400px] h-[50px] ml-[-10px] absolute z-50 bg-black rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-8px]'>
 
                             <input
-                                className='sm:w-[1000px] sm:ml-[260px] sm:mt-[45px] sm:h-[50px] sm:border-2 sm:border-gray-800 sm:bg-black sm:rounded-[200px] sm:placeholder:text-[25px] sm:pl-5'
+                                className='w-[250px] ml-[70px] mt-3 sm:w-[1000px] sm:ml-[260px] sm:mt-[45px] sm:h-[50px] border-2 border-gray-800 bg-black rounded-[200px] placeholder:text-[14px] sm:placeholder:text-[25px] pl-5'
                                 type="text" placeholder='Ürün Aratınız..' />
 
-                            <IoSearchOutline className='ml-5 sm:text-[35px] sm:ml-[1205px] sm:mt-[-42px] absolute cursor-pointer sm:hover:text-blue-800 sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
+                            <IoSearchOutline className='ml-[290px] mt-[-22px] sm:text-[35px] sm:ml-[1205px] sm:mt-[-42px] absolute cursor-pointer sm:hover:text-blue-800 sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
 
-                            <IoIosClose onClick={searchClose} className='sm:text-[50px] sm:ml-[1270px] sm:mt-[-50px] sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:cursor-pointer sm:hover:text-red-600' />
+                            <IoIosClose onClick={searchClose} className='ml-[320px] text-[23px] mt-[-25px] sm:text-[50px] sm:ml-[1270px] sm:mt-[-50px] sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125 sm:cursor-pointer sm:hover:text-red-600' />
                         </div>
                     ) : null}
 
@@ -89,8 +89,8 @@ const Navbar = () => {
                 </div>
 
                 {sepet ? (
-                    <div id='sepet' className='sm:bg-black sm:w-[400px] sm:h-[780px] sm:ml-[1120px] sm:z-10 sm:fixed sm:rounded-l-[130px]'>
-                        <IoIosClose onClick={sepetClose} className='sm:cursor-pointer sm:text-[50px] sm:ml-[345px] sm:hover:text-red-600 sm:transition-transform sm:duration-200 sm:transform sm:hover:scale-125' />
+                    <div id='sepet' className='bg-black mt-[-30px] w-[250px] h-[670px] ml-[125px] sm:w-[400px] sm:h-[780px] sm:ml-[1120px] sm:mt-0 z-10 fixed rounded-l-[130px]'>
+                        <IoIosClose onClick={sepetClose} className='cursor-pointer text-[25px] ml-[220px] mt-2  sm:text-[50px] sm:ml-[345px] hover:text-red-600 transition-transform duration-200 transform hover:scale-125' />
                     </div>
                 ) : null}
 
