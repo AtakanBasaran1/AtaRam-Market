@@ -62,10 +62,10 @@ export default function Home() {
           <p className='text-[20px] font-bold'>Ürüne Git</p>
         </button>
         <h1 id='h1'
-          className='text-[24px] mt-[100px] ml-[120px] sm:text-[80px] sm:mt-[200px] sm:ml-[200px] absolute font-bold'
+          className='text-[24px] mt-[100px] ml-[115px] sm:text-[80px] sm:mt-[200px] sm:ml-[200px] absolute font-bold'
         ><span className='text-[24px] sm:text-[80px] mt-[150px] ml-15'>ACER Nitro 5</span> <br /> 12% İndirimde!</h1>
         <h2 id='h2'
-          className='text-[30px] ml-[132px] mt-[180px] sm:text-[120px] text-yellow-500 font-bold sm:mt-[460px] sm:ml-[230px] absolute'
+          className='text-[30px] ml-[130px] mt-[180px] sm:text-[120px] text-yellow-500 font-bold sm:mt-[460px] sm:ml-[230px] absolute'
         >28.999₺</h2>
       </aside>
 
