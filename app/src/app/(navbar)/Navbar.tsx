@@ -49,8 +49,8 @@ const Navbar = () => {
 
             <div className='sm:flex sm:flex-row'>
 
-                <p onClick={logoClick} className='absolute text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
-                    AtaRam & Market
+                <p onClick={logoClick} className=' absolute text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
+                    <p> AtaRam & Market</p>
                 </p>
 
                 <div className='sm:flex sm:flex-row sm:ml-[830px]'>
@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
 
-            <div className='fixed mt-[-30px] left-0 w-[350px] bg-black py-2 z-50'>
+            <div className='fixed mt-[200px] left-0 w-[350px] bg-black py-2 z-50'>
                 <div className='flex justify-around items-center'>
                     <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/">
                         <CiHome className='text-2xl sm:hidden' />
