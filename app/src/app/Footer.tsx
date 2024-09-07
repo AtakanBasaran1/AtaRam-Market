@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div>
+        <footer>
 
             <div className='mt-[2430px] ml-3 absolute'>
                 <hr className='w-[1100px] ml-[200px] relative top-[0px] border-white border-3 mb-10' />
@@ -12,7 +12,7 @@ const Footer = () => {
 
                 </h1>
             </div>
-        </div>
+        </footer>
     )
 }
 

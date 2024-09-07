@@ -37,7 +37,7 @@ export default function Home() {
   // }, []);
 
   const product1Detail = () => {
-    window.location.href = "/product-1"
+    window.location.href = "/product-detail-1"
   }
 
   const allProductsPage = () => {
@@ -48,9 +48,9 @@ export default function Home() {
 
 
   return (
-    <div className='absolute z-10'>
+    <div>
 
-      <div className='mt-[0px]'>
+      <aside className='mt-[0px]'>
         <div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
           <img id='pc'
             className='w-[700px] absolute h-[380px] mt-[-40px] '
@@ -58,16 +58,16 @@ export default function Home() {
             alt="" />
         </div>
         <button id='button' onClick={product1Detail}
-          className='mt-[600px]  absolute w-[500px] border-gray-700 rounded-[30px] h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none ml-[850px]'>
-          <p className='text-[20px] font-bold'>Sepete Ekle</p>
+          className='mt-[600px] absolute w-[500px] border-gray-700 rounded-[30px] h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none ml-[850px]'>
+          <p className='text-[20px] font-bold'>Ürüne Git</p>
         </button>
         <h1 id='h1'
           className='text-[80px] mt-[200px] ml-[200px] absolute font-bold'
         ><span className='ml-6'>ACER Nitro 5</span> <br /> 12% İndirimde!</h1>
         <h2 id='h2'
-          className='text-[120px] font-bold mt-[460px] ml-[240px] absolute'
+          className='text-[120px] text-yellow-500 font-bold mt-[460px] ml-[230px] absolute'
         >28.999₺</h2>
-      </div>
+      </aside>
 
       <div className='flex flex-row'>
         <div className='flex flex-row ml-[-60px] mt-[610px]'>
@@ -85,7 +85,7 @@ export default function Home() {
       {/* ÜRÜNLER BAŞLANGIÇ */}
 
 
-      <div id='ilk-ürünler' className='  mt-[-200px] ml-[-30px]'>
+      <section id='ilk-ürünler' className='flex flex-col mt-[-200px] ml-[-30px]'>
 
         <div className='flex flex-row'>
 
@@ -97,12 +97,12 @@ export default function Home() {
                 alt=""
               /></div>
             <h1 className='mt-[760px] text-white ml-[300px] absolute text-[24px] font-bold'> Chuba Tshirt /
-              <span className='text-[28px]'> 640₺</span>
+              <span className='text-[28px] text-yellow-500'> 640₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
             <button
               className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[320px]'>
-              <p className='text-[20px] font-bold'>Sepete Ekle</p>
+              <p className='text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
 
@@ -114,12 +114,12 @@ export default function Home() {
                 alt="" />
             </div>
             <h1 className='mt-[760px] text-white ml-[320px] absolute text-[24px] font-bold'> Fluer Şort /
-              <span className='text-[28px]'> 412₺</span>
+              <span className='text-[28px] text-yellow-500'> 412₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
             <button
               className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[325px]'>
-              <p className='text-[20px] font-bold'>Sepete Ekle</p>
+              <p className='text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
 
@@ -130,17 +130,17 @@ export default function Home() {
                 src={tshirt3.src}
                 alt="" /></div>
             <h1 className='mt-[760px] text-white ml-[300px] absolute text-[24px] font-bold'> United Tshirt /
-              <span className='text-[28px]'> 410₺</span>
+              <span className='text-[28px] text-yellow-500'> 410₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
             <button
               className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[330px]'>
-              <p className='text-[20px] font-bold'>Sepete Ekle</p>
+              <p className='text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
         </div>
 
-      </div>
+      </section>
 
       <div id='ikinci-ürünler' className='flex flex-col mt-[650px] ml-[-30px]'>
 
@@ -154,12 +154,12 @@ export default function Home() {
                 alt=""
               /></div>
             <h1 className='mt-[760px] text-white ml-[275px] absolute text-[24px] font-bold'> Chuba Tshirt - V2 /
-              <span className='text-[28px]'> 620₺</span>
+              <span className='text-[28px] text-yellow-500'> 620₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
             <button
               className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[320px]'>
-              <p className='text-[20px] font-bold'>Sepete Ekle</p>
+              <p className='text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
 
@@ -171,12 +171,12 @@ export default function Home() {
                 alt="" />
             </div>
             <h1 className='mt-[760px] text-white ml-[250px] absolute text-[24px] font-bold'> Philips Kahve Makinesi /
-              <span className='text-[28px]'> 1299₺</span>
+              <span className='text-[28px] text-yellow-500' > 1299₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
             <button
               className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[330px]'>
-              <p className='text-[20px] font-bold'>Sepete Ekle</p>
+              <p className='text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
 
@@ -187,12 +187,12 @@ export default function Home() {
                 src={pc.src}
                 alt="" /></div>
             <h1 className='mt-[760px] text-white ml-[290px] absolute text-[24px] font-bold'> MSI Laptop /
-              <span className='text-[28px]'> 21.299₺</span>
+              <span className='text-[28px] text-yellow-500'> 21.299₺</span>
             </h1>
             <hr className='absolute w-[208px] mt-[810px] ml-[300px]' />
             <button
               className='mt-[840px]  absolute w-[160px] border-gray-700 rounded-[30px] h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none ml-[330px]'>
-              <p className='text-[20px] font-bold'>Sepete Ekle</p>
+              <p className='text-[20px] font-bold'>Ürüne Git</p>
             </button>
           </div>
         </div>
@@ -204,7 +204,7 @@ export default function Home() {
 
       <div className='ml-[600px] mt-[900px]'>
         <hr className='w-[300px]' />
-        <button onClick={allProductsPage} className='text-[30px] ml-10 mt-3 font-bold'>Tüm Ürünleri Gör</button>
+        <button onClick={allProductsPage} className='text-[30px] ml-10 mt-3 font-bold hover:text-blue-600'>Tüm Ürünleri Gör</button>
       </div>
 
 

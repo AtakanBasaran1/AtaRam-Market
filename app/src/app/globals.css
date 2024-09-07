@@ -6,9 +6,12 @@ body {
     background-color: rgb(18, 18, 18);
     color: white;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
-#pc {
+#pc,
+#pcbaslik,
+#pcbaslik2 {
     animation: slideInFromRight 1s ease forwards;
 }
 
@@ -39,6 +42,36 @@ body {
 #ikinci-ürünler {
     animation: slideInFromLeft 2.3s ease forwards;
 }
+
+#pc2 {
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+#sol {
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+#sağ {
+    animation: slideInFromRight 1s ease forwards;
+}
+
+#s {
+    animation: slideInFromRight 1s ease forwards;
+}
+
+#ss {
+    animation: slideInFromRight 1.2s ease forwards;
+}
+
+#sss {
+    animation: slideInFromRight 1.4s ease forwards;
+}
+
+#ssss {
+    animation: slideInFromRight 1.6s ease forwards;
+}
+
+
 
 
 
