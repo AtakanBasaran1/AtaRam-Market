@@ -4,10 +4,10 @@ const Footer = () => {
     return (
         <footer>
 
-            <div className='mt-[2430px] ml-3 absolute'>
-                <hr className='w-[1100px] ml-[200px] relative top-[0px] border-white border-3 mb-10' />
+            <div className='mt-[3050px] fixed ml-[00px] sm:mt-[2430px] sm:ml-3 absolute'>
+                <hr className='w-[380px] mb-4 sm:w-[1100px] sm:ml-[200px] relative sm:top-[0px] border-gray-500 border-3 sm:mb-10' />
                 <h1
-                    className='relative top-[10px] text-[15px] flex text-center ml-[180px] justify-center font-medium mb-5'
+                    className='relative mb-3 text-[12px] sm:top-[10px] sm:text-[15px] flex text-center sm:ml-[180px] justify-center font-medium sm:mb-5'
                 >Copyright © 2024. Tüm Hakları Saklıdır.
 
                 </h1>
