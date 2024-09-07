@@ -96,26 +96,27 @@ const Navbar = () => {
 
 
 
-            <div className=' bg-black-500 h-[78px]  mt-[650px]  sm:w-[500px] sm:h-[50px] sm:absolute  sm:mt-[12px] sm:ml-[480px]'>
-                <div className='mt-[-20px] sm:mt-[0px] ml-[75px]'>
-                    <hr className='w-[485px] ml-[-80px] mt-5 fixed sm:hidden' />
-                    <Link className='text-[12px] sm:text-[17px] top-[35px] left-5 relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/">
-                        <CiHome className='sm:hidden text-[28px] ml-3 relative' />
-                        Ana Sayfa
-
+            <div className='fixed bottom-0 w-full bg-black py-2 sm:hidden'>
+                <div className='flex justify-around items-center'>
+                    <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/">
+                        <CiHome className='text-2xl sm:hidden' />
+                        <span className='ml-2 sm:ml-0'>Ana Sayfa</span>
                     </Link>
-                    <Link className='text-[12px] sm:text-[17px] top-[-17px] left-[90px] relative sm:relative sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:mr-5 sm:hover:text-blue-400' href="/tüm-ürünler">
-                        <AiOutlineProduct className='sm:hidden text-[28px] left-[20px] top-[0px] relative' />
-                        Tüm Ürünler
+                    <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/tüm-ürünler">
+                        <AiOutlineProduct className='text-2xl sm:hidden' />
+                        <span className='ml-2 sm:ml-0'>Tüm Ürünler</span>
                     </Link>
-                    <Link className='relative text-[12px] sm:text-[17px] left-[170px] top-[-69px] sm:top-[15px] sm:left-[20px] sm:text-white sm:font-semibold sm:hover:text-blue-400' href="/hakkimizda">
-                        <MdArticle className='sm:hidden text-[28px] left-[16px] top-[0px] relative' />
-                        Hakkımızda</Link>
-                    <Link className='relative top-[-121px] sm:text-[17px] left-[250px] text-[12px] sm:top-[15px] sm:left-[40px] sm:text-white sm:font-semibold sm:hover:text-blue-400' href="/iletisim">
-                        <MdContactEmergency className='sm:hidden text-[28px] left-[5px] top-[0px] relative' />
-                        İletişim</Link>
+                    <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/hakkimizda">
+                        <MdArticle className='text-2xl sm:hidden' />
+                        <span className='ml-2 sm:ml-0'>Hakkımızda</span>
+                    </Link>
+                    <Link className='text-white text-xs sm:text-base hover:text-blue-400 flex items-center' href="/iletisim">
+                        <MdContactEmergency className='text-2xl sm:hidden' />
+                        <span className='ml-2 sm:ml-0'>İletişim</span>
+                    </Link>
                 </div>
             </div>
+
         </nav>
 
     )
