@@ -89,7 +89,7 @@ const Navbar = () => {
                 </div>
 
                 {sepet ? (
-                    <div id='sepet' className='w-[400px] absolute sm:relative border-2 mt-[-35px]  border-gray-700 h-[660px] ml-[-20px] z-50 bg-black sm:rounded-b-[80px] sm:w-[1540px] sm:h-[500px] sm:ml-[-1365px] sm:mt-[-10px]'>
+                    <div id='sepet' className='w-[400px] absolute sm:relative border-2 mt-[-35px]  border-gray-700 h-[660px] ml-[-20px] z-50 bg-black sm:rounded-b-[80px] sm:w-[1540px] sm:h-[750px] sm:ml-[-1365px] sm:mt-[-10px]'>
                         <div className='fixed'>
                             <IoIosClose
                                 onClick={sepetClose}

@@ -82,28 +82,28 @@ const page = () => {
 
     return (
         <div>
-            <div className='sm:transition-transform sm:duration-500 sm:hover:scale-105'><img id='pc2' className='w-[600px] mt-[200px] absolute ml-[140px]  cursor-pointer' src={pc2.src} alt="" /></div>
+            <div className='sm:transition-transform sm:duration-500 sm:hover:scale-105'><img id='pc2' className='w-[200px] ml-[85px] mt-[100px] sm:w-[600px] sm:mt-[200px] absolute sm:ml-[140px]  cursor-pointer' src={pc2.src} alt="" /></div>
 
 
             <div id='pcbaslik'>
 
-                <h1 className='text-[24px] ml-[900px] mt-[200px] absolute font-bold text-center'>Acer Nitro 5 <br /> <span>AN515-58-70VR NH.QM0EY.00B</span> <br /> <span>i7-12650H 8GB 1TB SSD</span> RTX 4060 15,6'' <br /> <span>IPS Gaming (Oyuncu) Notebook</span></h1>
-                <p className='text-[28px] absolute ml-[1055px] border-b-2 mt-[350px]  font-bold text-yellow-500'>28.999₺</p>
+                <h1 className='text-[15px] mt-[280px] ml-[60px] sm:text-[24px] sm:ml-[900px] sm:mt-[200px] absolute font-bold text-center'>Acer Nitro 5 <br /> <span>AN515-58-70VR NH.QM0EY.00B</span> <br /> <span>i7-12650H 8GB 1TB SSD</span> RTX 4060 15,6'' <br /> <span>IPS Gaming (Oyuncu) Notebook</span></h1>
+                <p className='text-[18px] mt-[380px] ml-[150px] sm:text-[28px] absolute sm:ml-[1055px] border-b-2 sm:mt-[350px]  font-bold text-yellow-500'>28.999₺</p>
 
 
 
                 <div className='mt-8 absolute'>
 
-                    <p className='font-semibold ml-[970px] mt-[380px] w-[300px] absolute'> <span className='text-green-500'>RF29DW239</span> Kodu ile ekstra 10% İndirim!</p>
+                    <p className='text-[12px] ml-[80px] mt-[385px] sm:text-[16px] w-[200px] font-semibold sm:ml-[970px] sm:mt-[380px] sm:w-[300px] absolute'> <span className='text-green-500'>RF29DW239</span> Kodu ile ekstra 10% İndirim!</p>
                     <input
-                        className='placeholder:text-blue-300 border-green-500 outline-none pl-3 absolute ml-[930px] mt-[420px] bg-black border-2 rounded-[5px] h-[35px] w-[200px]'
+                        className='w-[100px] h-[20px] mt-[415px] ml-[70px] placeholder:text-[10px] placeholder:text-blue-300 border-green-500 outline-none pl-2 sm:placeholder:text-[18px] sm:pl-3 absolute sm:ml-[930px] sm:mt-[420px] bg-black border-2 rounded-[5px] sm:h-[35px] sm:w-[200px]'
                         type="text" placeholder='İndirim Kodunu Yaz' />
                     <button
 
-                        className='absolute ml-[1155px] mt-[420px] border-2 border-green-500 h-[35px] hover:bg-blue-800 hover:border-green-500 bg-black w-[120px] rounded-[5px]'
+                        className='w-[100px] text-[12px] h-[20px] mt-[415px] ml-[190px] absolute sm:ml-[1155px] sm:mt-[420px] sm:text-[18px] border-2 border-green-500 sm:h-[35px] hover:bg-blue-800 hover:border-green-500 bg-black sm:w-[120px] rounded-[5px]'
                         type='submit'>Kodu Kullan</button>
                 </div>
-                <hr className='w-[400px] absolute ml-[903px] mt-[510px]' />
+                <hr className='mt-[485px] ml-[80px] w-[200px] sm:w-[400px] absolute sm:ml-[903px] sm:mt-[510px]' />
 
                 <div className='text-[30px] ml-[920px] mt-[530px] absolute'>
                     <h1>Miktar</h1>
