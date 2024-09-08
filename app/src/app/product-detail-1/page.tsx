@@ -88,24 +88,24 @@ const page = () => {
             <div id='pcbaslik'>
 
                 <h1 className='text-[15px] mt-[280px] ml-[60px] sm:text-[24px] sm:ml-[900px] sm:mt-[200px] absolute font-bold text-center'>Acer Nitro 5 <br /> <span>AN515-58-70VR NH.QM0EY.00B</span> <br /> <span>i7-12650H 8GB 1TB SSD</span> RTX 4060 15,6'' <br /> <span>IPS Gaming (Oyuncu) Notebook</span></h1>
-                <p className='text-[18px] mt-[380px] ml-[150px] sm:text-[28px] absolute sm:ml-[1055px] border-b-[1px] sm:border-b-2 sm:mt-[350px]  font-bold text-yellow-500'>28.999₺</p>
+                <p className='text-[18px] mt-[380px] ml-[155px] sm:text-[28px] absolute sm:ml-[1055px] border-b-[1px] sm:border-b-2 sm:mt-[350px]  font-bold text-yellow-500'>28.999₺</p>
 
 
 
                 <div className='mt-8 absolute'>
 
-                    <p className='text-[12px] ml-[80px] mt-[385px] sm:text-[16px] w-[200px] font-semibold sm:ml-[970px] sm:mt-[380px] sm:w-[300px] absolute'> <span className='text-green-500'>RF29DW239</span> Kodu ile ekstra 10% İndirim!</p>
+                    <p className='text-[12px] ml-[90px] mt-[385px] sm:text-[16px] w-[200px] font-semibold sm:ml-[970px] sm:mt-[380px] sm:w-[300px] absolute'> <span className='text-green-500'>RF29DW239</span> Kodu ile ekstra 10% İndirim!</p>
                     <input
-                        className='w-[100px] h-[20px] mt-[415px] ml-[70px] placeholder:text-[11px] placeholder:text-blue-300 border-green-500 outline-none pl-1 sm:placeholder:text-[18px] sm:pl-3 absolute sm:ml-[930px] sm:mt-[420px] bg-black border-2 rounded-[5px] sm:h-[35px] sm:w-[200px]'
+                        className='w-[100px] h-[20px] mt-[415px] ml-[80px] placeholder:text-[11px] placeholder:text-blue-300 border-green-500 outline-none pl-1 sm:placeholder:text-[18px] sm:pl-3 absolute sm:ml-[930px] sm:mt-[420px] bg-black border-2 rounded-[5px] sm:h-[35px] sm:w-[200px]'
                         type="text" placeholder='İndirim Kodunu Yaz' />
                     <button
 
-                        className='w-[100px] text-[12px] h-[20px] mt-[415px] ml-[190px] absolute sm:ml-[1155px] sm:mt-[420px] sm:text-[18px] border-2 border-green-500 sm:h-[35px] hover:bg-blue-800 hover:border-green-500 bg-black sm:w-[120px] rounded-[5px]'
+                        className='w-[100px] text-[12px] h-[20px] mt-[415px] ml-[200px] absolute sm:ml-[1155px] sm:mt-[420px] sm:text-[18px] border-2 border-green-500 sm:h-[35px] hover:bg-blue-800 hover:border-green-500 bg-black sm:w-[120px] rounded-[5px]'
                         type='submit'>Kodu Kullan</button>
                 </div>
-                <hr className='mt-[485px] ml-[80px] w-[200px] sm:w-[400px] absolute sm:ml-[903px] sm:mt-[510px]' />
+                <hr className='mt-[485px] ml-[90px] w-[200px] sm:w-[400px] absolute sm:ml-[903px] sm:mt-[510px]' />
 
-                <div className='mt-[490px] ml-5 sm:text-[32px] sm:ml-[920px] sm:mt-[530px] absolute'>
+                <div className='mt-[490px] ml-10 sm:text-[32px] sm:ml-[920px] sm:mt-[530px] absolute'>
                     <h1 className='ml-[70px] sm:text-[25px] text-[19px] sm:ml-[7px]'>Miktar</h1>
 
                     <div className='flex ml-[-4px] flex-row absolute sm:ml-7 sm:mt-[-15px]'>
@@ -114,7 +114,7 @@ const page = () => {
                         <button className='text-[28px] ml-[7px] mt-[-8px] sm:text-[47px] sm:ml-[10px] hover:text-blue-500' onClick={azalt}><p>-</p></button>
                     </div>
 
-                    <div className='flex flex-col sm:flex-row mt-[-31px] ml-[150px] sm:ml-[120px] sm:mt-[-38px]'>
+                    <div className='flex flex-col sm:flex-row mt-[-31px] ml-[140px] sm:ml-[120px] sm:mt-[-38px]'>
 
                         <LuBox className='text-[14px] mt-[9px] text-blue-600 absolute sm:mt-[13px]' /> <p className='sm:text-[16px] mt-2 text-[12px] ml-5'>Ücretsiz Kargo!</p>
                         <TbPoint className='text-[26px] ml-[-5px] mt-[30px] text-green-600 absolute sm:mt-[7px] sm:ml-[130px]' /> <p className='sm:text-[15px] sm:mt-[9px] mt-[9px] text-[12px] ml-5 sm:ml-[38px]'>Ürün Stokta!</p>
@@ -123,9 +123,9 @@ const page = () => {
                     </div>
 
                 </div>
-                <button className='w-[180px] mt-[560px] ml-[85px] bg-blue-800 sm:w-[400px] sm:h-[42px] rounded-[20px] absolute sm:ml-[903px] sm:mt-[635px] font-bold hover:bg-blue-600'>Sepete Ekle</button>
+                <button className='w-[180px] mt-[560px] ml-[95px] bg-blue-800 sm:w-[400px] sm:h-[42px] rounded-[20px] absolute sm:ml-[903px] sm:mt-[635px] font-bold hover:bg-blue-600'>Sepete Ekle</button>
 
-                <img className='w-[160px] mt-[600px] ml-[90px] sm:w-[350px] absolute sm:ml-[925px] sm:mt-[690px]' src={payments.src} alt="" />
+                <img className='w-[160px] mt-[600px] ml-[105px] sm:w-[350px] absolute sm:ml-[925px] sm:mt-[690px]' src={payments.src} alt="" />
 
 
 
