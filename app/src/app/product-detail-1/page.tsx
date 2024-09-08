@@ -39,9 +39,9 @@ const page = () => {
         }
     }
 
-    const [ürünAciklamasi, setÜrünAciklamasi] = useState(true)
+    const [ürünAciklamasi, setÜrünAciklamasi] = useState(false)
 
-    const [degerlendirmeler, setDegerlendirmeler] = useState(false)
+    const [degerlendirmeler, setDegerlendirmeler] = useState(true)
 
     const [taksit, setTaksit] = useState(false)
 
@@ -132,7 +132,7 @@ const page = () => {
             </div>
             <hr className='w-[450px] ml-[0px] top-[720px] sm:w-[1000px] sm:ml-[250px] relative sm:top-[850px] border-gray-500' />
 
-            <div className='absolute mt-[750px] sm:mt-[900px]'>
+            <div className='absolute mt-[750px] sm:ml-[-50px] sm:mt-[900px]'>
 
                 <aside className='sm:ml-[320px] sm:w-[2000px] sm:mt-10'>
                     <button id='sol' onClick={ürünAciklamasiOpen} className='text-[14px] h-[25px] ml-[40px] w-[120px] sm:text-[18px] hover:text-yellow-500 bg-orange-600 hover:bg-orange-400 sm:h-[35px] rounded-[15px] sm:w-[180px] mr-[50px] font-semibold '><p className='text-white'>Ürün Açıklaması</p></button>
@@ -313,16 +313,16 @@ const page = () => {
             ) : null}
 
             {degerlendirmeler ? (
-                <div id='sağ' className='mt-[1050px] w-[1230px] ml-[150px] border-2 border-gray-700 h-[1000px] border-gray-500 text-[18px] font-bold flex flex-row rounded-[10px] ]'>
+                <div id='sağ' className='mt-[870px] w-[300px] ml-8 sm:mt-[1050px] sm:w-[1230px] sm:ml-[150px] border-2 h-[1330px] sm:h-[950px] sm:text-[18px] font-bold flex flex-col sm:flex-row border-gray-500 rounded-[10px]'>
 
                     <aside>
 
-                        <h1 className='ml-8 mt-5'>Acer Nitro 5 AN515 Intel Core I7 12650H 16 GB 512 GB SSD Rtx 4060 8 GB Freedos 15,6" 165 Hz Fhd IPS <br /> <span>Taşınabilir Bilgisayar NH.QM0EY.009 Değerlendirmeleri</span></h1>
+                        <h1 className='ml-3 mt-5 sm:ml-8 sm:mt-5'>Acer Nitro 5 AN515 Intel Core I7 12650H 16 GB 512 GB SSD Rtx 4060 8 GB Freedos 15,6" 165 Hz Fhd IPS <br /> <span>Taşınabilir Bilgisayar NH.QM0EY.009 Değerlendirmeleri</span></h1>
 
-                        <img className='w-[250px] mt-10 ml-10 transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer' src={pc2.src} alt="" />
+                        <img className='w-[220px] sm:w-[250px] mt-10 ml-10 transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer' src={pc2.src} alt="" />
 
-                        <h1 className='text-[70px] text-yellow-300 font-bold ml-[350px] mt-[-190px]'>4.7</h1>
-                        <div className='ml-[305px] flex flex-row'>
+                        <h1 className='mt-[10px] ml-[120px] text-[40px] sm:text-[70px] text-yellow-300 font-bold sm:ml-[350px] sm:mt-[-190px]'>4.7</h1>
+                        <div className='ml-[60px] sm:ml-[305px] flex flex-row'>
                             <IoStarOutline className='size-8 text-yellow-500 mr-1 ' />
                             <IoStarOutline className='size-8 text-yellow-500 mr-1' />
                             <IoStarOutline className='size-8 text-yellow-500 mr-1' />
@@ -330,22 +330,22 @@ const page = () => {
                             <IoStarOutline className='size-8 text-yellow-500' />
                         </div>
 
-                        <button className='mt-[100px] ml-[60px] w-[200px] hover:bg-blue-300 bg-blue-500 rounded-[15px] h-[40px]'><p className='text-[17px] font-bold'>Değerlendir</p></button>
-                        <h1 className='text-orange-300 text-[16px] ml-[70px] mt-6'>Yorum Yayınlama Kriterleri</h1>
-                        <IoIosInformationCircleOutline className='ml-[70px] mt-3' /> <p className='text-[14px] ml-[95px] mt-[-20px] font-normal'>Değerlendirme yapabilmek için bu ürünü satın almış olmalısınız.</p>
+                        <button className='mt-[40px] ml-[45px] sm:mt-[100px] sm:ml-[60px] w-[200px] hover:bg-blue-300 bg-blue-500 rounded-[15px] h-[40px]'><p className='text-[17px] font-bold'>Değerlendir</p></button>
+                        <h1 className='text-orange-300 text-[16px] ml-[55px] sm:ml-[70px] mt-6'>Yorum Yayınlama Kriterleri</h1>
+                        <IoIosInformationCircleOutline className='ml-[15px] sm:ml-[70px] mt-3' /> <p className='text-[14px] ml-[35px] sm:ml-[95px] mt-[-19px] font-normal'>Değerlendirme yapabilmek için bu ürünü satın almış olmalısınız.</p>
 
-                        <hr className='border-gray-800 w-[1100px] ml-[60px] mt-4' />
+                        <hr className='border-gray-800 w-[296px] sm:w-[1100px] sm:ml-[60px] mt-4' />
 
-                        <h1 className='font-semibold text-[17px] ml-[70px] mt-4'>Kullanıcı Fotoğraf Ve Videoları</h1>
+                        <h1 className='font-semibold text-[17px] ml-[40px] sm:ml-[70px] mt-4'>Kullanıcı Fotoğraf Ve Videoları</h1>
 
-                        <div className='flex flex-row'>
+                        <div className='flex flex-col ml-[-35px] sm:ml-0 sm:flex-row'>
                             <img className='w-[230px] h-[230px] rounded-[15px] border-2 border-gray-700 border-gray-700 ml-[70px] mt-8 transition-transform duration-500 hover:scale-105 transform ease-in-out cursor-pointer' src={kullanicifoto1.src} alt="" />
                             <img className='w-[230px] h-[230px] rounded-[15px] border-2 border-gray-700 ml-[70px] mt-8 transition-transform duration-500 transform ease-in-out hover:scale-105 cursor-pointer' src={kullanicifoto2.src} alt="" />
                         </div>
 
-                        <hr className='w-[1100px] ml-[60px] mt-10 border-gray-800' />
+                        <hr className='w-[296px] sm:w-[1100px] sm:ml-[60px] mt-10 border-gray-800' />
 
-                        <h1 className='font-semibold ml-[60px] mt-5'>Kullanıcı Değerlendirmeleri</h1>
+                        <h1 className='font-semibold ml-[55px] sm:ml-[60px] mt-5'>Kullanıcı Değerlendirmeleri</h1>
 
                     </aside>
 
