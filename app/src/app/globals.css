@@ -100,6 +100,7 @@ body {
     }
 }
 
+
 /* Büyük cihazlar için (769px ve üstü) */
 @media (min-width: 769px) {
     .container {

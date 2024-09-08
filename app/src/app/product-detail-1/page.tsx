@@ -130,15 +130,15 @@ const page = () => {
 
 
             </div>
-            <hr className='w-[1000px] ml-[250px] relative top-[850px]' />
+            <hr className='w-[450px] ml-[0px] top-[720px] sm:w-[1000px] sm:ml-[250px] relative sm:top-[850px] border-gray-500' />
 
-            <div className='absolute mt-[900px]'>
+            <div className='absolute mt-[750px] sm:mt-[900px]'>
 
-                <aside className='ml-[320px] w-[2000px] mt-10'>
-                    <button id='sol' onClick={ürünAciklamasiOpen} className='text-[18px] hover:text-yellow-500 bg-orange-600 hover:bg-orange-400 h-[35px] rounded-[15px] w-[180px] mr-[50px] font-semibold '><p className='text-white'>Ürün Açıklaması</p></button>
-                    <button id='sol' onClick={degerlendirmelerOpen} className='text-[18px]  bg-orange-600 hover:bg-orange-400 h-[35px] rounded-[15px] w-[180px] mr-[50px] font-semibold'>Değerlendirmeler</button>
-                    <button id='sağ' onClick={taksitOpen} className='text-[18px]  mr-[50px] bg-orange-600 hover:bg-orange-400 h-[35px] rounded-[15px] w-[180px] font-semibold'>Taksit Seçenekleri</button>
-                    <button id='sağ' onClick={iadeOpen} className='text-[18px]  mr-[50px] bg-orange-600 hover:bg-orange-400 h-[35px] rounded-[15px] w-[180px] font-semibold'>İptal ve İade Koşulları</button>
+                <aside className='sm:ml-[320px] sm:w-[2000px] sm:mt-10'>
+                    <button id='sol' onClick={ürünAciklamasiOpen} className='text-[14px] h-[25px] ml-[40px] w-[120px] sm:text-[18px] hover:text-yellow-500 bg-orange-600 hover:bg-orange-400 sm:h-[35px] rounded-[15px] sm:w-[180px] mr-[50px] font-semibold '><p className='text-white'>Ürün Açıklaması</p></button>
+                    <button id='sol' onClick={degerlendirmelerOpen} className='text-[14px] h-[25px] ml-[200px] mt-[-100px] w-[120px]  sm:text-[18px]  bg-orange-600 hover:bg-orange-400 sm:h-[35px] relative top-[-26px] rounded-[15px] sm:w-[180px] sm:ml-0 mr-[50px] sm:top-0 font-semibold'>Değerlendirmeler</button>
+                    <button id='sağ' onClick={taksitOpen} className='text-[14px] h-[25px] ml-[40px] w-[120px]  sm:text-[18px]  bg-orange-600 hover:bg-orange-400 sm:h-[35px] relative rounded-[15px] sm:w-[180px] sm:ml-0 mr-[50px] sm:top-0 font-semibold'>Taksit Seçenekleri</button>
+                    <button id='sağ' onClick={iadeOpen} className='text-[14px] h-[25px] ml-[195px] mt-[-100px] w-[130px]  sm:text-[18px] top-[-24px] bg-orange-600 hover:bg-orange-400 sm:h-[35px] relative rounded-[15px] sm:w-[180px] sm:ml-0 mr-[50px] sm:top-0 font-semibold'>İptal ve İade Koşulları</button>
 
                 </aside>
 
