@@ -145,166 +145,168 @@ const page = () => {
             </div>
 
             {ürünAciklamasi ? (
-                <div id='sol' className='mt-[1050px] w-[1230px] ml-[150px] border-2 h-[800px] text-[18px] font-bold flex flex-row border-gray-500 rounded-[10px]'>
+                <div id='sol' className='mt-[870px] w-[300px] ml-8 sm:mt-[1050px] sm:w-[1230px] sm:ml-[150px] border-2 h-[1330px] sm:h-[800px] sm:text-[18px] font-bold flex flex-col sm:flex-row border-gray-500 rounded-[10px]'>
 
-                    <h1 className='text-[28px] absolute ml-10 mt-10'>Ürün Özellikleri</h1>
+                    <h1 className='text-[25px] mt-3 ml-[65px] sm:text-[28px] absolute sm:ml-10 sm:mt-10'>Ürün Özellikleri</h1>
 
                     <aside className='mt-[140px]'>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[70px] sm:mr-[200px]  '>
                                 Cihaz Ağırlığı
                             </p>
                             <p>
                                 2 - 4 kg
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[250px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[110px] sm:mr-[245px] '>
                                 İşlemci
                             </p>
                             <p>
                                 12650H
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px] sm:mr-[200px]' >
                                 Bluetooth Özelliği
                             </p>
                             <p>
                                 Var
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 max-w-[400px] max-h-[45px] pl-4  p-2 rounded-[10px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] max-h-[45px] pl-4  p-2 rounded-[10px]'>
                             <p className=' absolute'>
                                 Ekran Kartı Hafızası
 
                             </p>
-                            <p className='ml-[320px]'>
+                            <p className='ml-[170px] sm:ml-[330px]'>
                                 8 GB
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px] sm:mr-[200px]' >
                                 SSD Kapasitesi
                             </p>
                             <p>
                                 512 GB
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px] absolute'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px]   absolute'>
                                 İşlemci Cache
 
                             </p>
-                            <p className='ml-[260px]'>
+                            <p className='ml-[120px] sm:ml-[260px]'>
                                 24 MB Cache
 
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px] absolute'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px]   absolute'>
                                 İşletim Sistemi
                             </p>
-                            <p className='ml-[250px]'>
+                            <p className='ml-[120px] sm:ml-[260px]'>
                                 Yok (Free Dos)
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[240px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[80px] sm:mr-[250px]' >
                                 Ram Tipi
                             </p>
                             <p>
                                 DDR5
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px] absolute'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px] sm:mr-[200px]  absolute'>
                                 Harddisk Kapasitesi
                             </p>
-                            <p className='ml-[320px]'>
+                            <p className='ml-[170px] sm:ml-[330px]'>
                                 Yok
                             </p>
                         </div>
 
                     </aside>
-                    <aside className='ml-[320px] mt-[140px]'>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px]'>
+                    <aside className='mt-[0px] sm:mt-[140px] sm:ml-[360px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[70px] sm:mr-[200px]  '>
                                 Cihaz Ağırlığı
                             </p>
                             <p>
                                 2 - 4 kg
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[250px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[110px] sm:mr-[245px] '>
                                 İşlemci
                             </p>
                             <p>
                                 12650H
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px] sm:mr-[200px]' >
                                 Bluetooth Özelliği
                             </p>
                             <p>
                                 Var
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 max-w-[400px] max-h-[45px] pl-4  p-2 rounded-[10px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] max-h-[45px] pl-4  p-2 rounded-[10px]'>
                             <p className=' absolute'>
                                 Ekran Kartı Hafızası
 
                             </p>
-                            <p className='ml-[320px]'>
+                            <p className='ml-[170px] sm:ml-[330px]'>
                                 8 GB
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px] sm:mr-[200px]' >
                                 SSD Kapasitesi
                             </p>
                             <p>
                                 512 GB
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px] absolute'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px]   absolute'>
                                 İşlemci Cache
 
                             </p>
-                            <p className='ml-[260px]'>
+                            <p className='ml-[120px] sm:ml-[260px]'>
                                 24 MB Cache
 
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px] absolute'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px]   absolute'>
                                 İşletim Sistemi
                             </p>
-                            <p className='ml-[250px]'>
+                            <p className='ml-[120px] sm:ml-[260px]'>
                                 Yok (Free Dos)
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[240px]'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[80px] sm:mr-[250px]' >
                                 Ram Tipi
                             </p>
                             <p>
                                 DDR5
                             </p>
                         </div>
-                        <div className='ml-10 mt-5 flex flex-row border-2 border-gray-700 w-[400px] pl-4  p-2 rounded-[10px]'>
-                            <p className=' mr-[200px] absolute'>
+                        <div className='ml-6  mt-5 w-[250px] flex flex-row border-2 border-gray-700 sm:w-[400px] pl-4  p-2 rounded-[10px]'>
+                            <p className=' mr-[50px] sm:mr-[200px]  absolute'>
                                 Harddisk Kapasitesi
                             </p>
-                            <p className='ml-[320px]'>
+                            <p className='ml-[170px] sm:ml-[330px]'>
                                 Yok
                             </p>
                         </div>
 
                     </aside>
+
+
 
 
                 </div>
