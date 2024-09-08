@@ -45,11 +45,11 @@ const Navbar = () => {
 
 
     return (
-        <nav id='nav' className='fixed z-50 sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
+        <nav id='nav' className=' fixed z-[1000] sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
 
-            <div className='sm:flex sm:flex-row'>
+            <div className=' sm:flex sm:flex-row'>
 
-                <span onClick={logoClick} className=' absolute text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
+                <span onClick={logoClick} className=' fixed text-[24px] w-[220px] mt-3 ml-5 font-bold text-[16px] sm:left-[55px] sm:top-[20px] sm:text-[24px] sm:mr-[20px] sm:w-[200px] sm:w-[180px] cursor-pointer'>
                     <p> AtaRam & Market</p>
                 </span>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
 
                     {search ? (
-                        <div id='search' className='w-[400px] h-[50px] ml-[-20px] absolute z-50 bg-black rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-8px]'>
+                        <div id='search' className='w-[420px] border-2 border-gray-700 mt-[-10px] h-[55px] ml-[-18px] absolute z-50 bg-black rounded-b-[100px] sm:w-[1550px] sm:h-[145px] sm:ml-[-825px] sm:mt-[-10px]'>
 
                             <input
                                 className='w-[250px] ml-[70px] mt-3 sm:w-[1000px] sm:ml-[260px] sm:mt-[45px] sm:h-[50px] border-2 border-gray-800 bg-black rounded-[200px] placeholder:text-[14px] sm:placeholder:text-[25px] pl-5'
@@ -89,15 +89,17 @@ const Navbar = () => {
                 </div>
 
                 {sepet ? (
-                    <div id='sepet' className='bg-black mt-[-30px] w-[250px] h-[670px] ml-[125px] sm:w-[400px] sm:h-[780px] sm:ml-[1120px] sm:mt-0 z-10 fixed rounded-l-[130px]'>
-                        <IoIosClose
-                            onClick={sepetClose}
-                            className='cursor-pointer text-[25px] ml-[220px] mt-2 sm:text-[50px] sm:ml-[345px] hover:text-red-600 transition-transform duration-200 transform hover:scale-125'
-                        />
+                    <div id='sepet' className='w-[450px] absolute sm:relative border-2 mt-[-35px]  border-gray-700 h-[660px] ml-[-30px] z-50 bg-black rounded-b-[80px] sm:w-[1540px] sm:h-[500px] sm:ml-[-1365px] sm:mt-[-10px]'>
+                        <div className='fixed'>
+                            <IoIosClose
+                                onClick={sepetClose}
+                                className='cursor-pointer text-[25px] ml-[370px] mt-2 sm:text-[50px] sm:ml-[1470px] hover:text-red-600 transition-transform duration-200 transform hover:scale-125'
+                            />
+                        </div>
                     </div>
                 ) : null}
 
-                <hr className='w-[483px] mt-10 k border-gray-700 sm:border-[0,5px] absolute sm:top-[55px] sm:w-[1450px] sm:ml-[35px]' />
+                <hr className='w-[375px] mt-10 k border-gray-700 sm:border-[0,5px] absolute sm:top-[55px] sm:w-[1450px] sm:ml-[35px]' />
             </div>
 
 

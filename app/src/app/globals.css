@@ -10,17 +10,25 @@ body {
 
 }
 
+
+
+
+
+
+
 #pc,
 #pcbaslik,
 #pcbaslik2 {
     animation: slideInFromRight 1s ease forwards;
 }
 
-#sepet {
+/* #sepet {
+    position: fixed;
     animation: slideInFromRight 0.5s ease forwards;
-}
+} */
 
-#search {
+#search,
+#sepet {
     animation: slideInFromUp 0.5s ease forwards;
 }
 
