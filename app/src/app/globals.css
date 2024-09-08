@@ -84,6 +84,29 @@ body {
     animation: slideInFromRight 1.6s ease forwards;
 }
 
+/* Küçük telefonlar için (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Orta boyutlu cihazlar için (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Büyük cihazlar için (769px ve üstü) */
+@media (min-width: 769px) {
+    .container {
+        padding: 30px;
+        font-size: 18px;
+    }
+}
 
 
 
