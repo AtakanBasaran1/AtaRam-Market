@@ -52,7 +52,7 @@ export default function Home() {
     <div className='overflow-hidden	'>
       <div>
         <aside className='mt-[0px]'>
-          < div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] sm:transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer' >
+          < div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] sm:transition-transform sm:duration-500 sm:ease-in-out transform sm:hover:scale-105 cursor-pointer' >
             <img id='pc'
               className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
               src={pc2.src}

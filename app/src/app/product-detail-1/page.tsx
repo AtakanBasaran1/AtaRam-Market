@@ -82,7 +82,7 @@ const page = () => {
 
     return (
         <div>
-            <img id='pc2' className='w-[600px] mt-[200px] absolute ml-[140px]  transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer' src={pc2.src} alt="" />
+            <div className='sm:transition-transform sm:duration-500 sm:hover:scale-105'><img id='pc2' className='w-[600px] mt-[200px] absolute ml-[140px]  cursor-pointer' src={pc2.src} alt="" /></div>
 
 
             <div id='pcbaslik'>
