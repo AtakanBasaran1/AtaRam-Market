@@ -52,7 +52,7 @@ export default function Home() {
     <div className='overflow-hidden	'>
       <div>
         <aside className='mt-[0px]'>
-          < div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer' >
+          < div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] sm:transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer' >
             <img id='pc'
               className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
               src={pc2.src}
@@ -91,7 +91,7 @@ export default function Home() {
           <div className='flex flex-col sm:flex-row'>
 
             <div className='mt-[-100px] ml-[-80px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={tshirt1.src}
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={sort.src}
@@ -125,7 +125,7 @@ export default function Home() {
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={tshirt3.src}
@@ -153,7 +153,7 @@ export default function Home() {
           <div className='flex flex-col sm:flex-row'>
 
             <div className='mt-[-200px] sm:mt-[-100px] ml-[-80px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
                 <img
                   className='w-[200px] ml-[100px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={kahve.src}
@@ -170,7 +170,7 @@ export default function Home() {
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={tshirt3.src}
@@ -187,7 +187,7 @@ export default function Home() {
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[340px] sm:h-[250px] sm:ml-[10px] sm:mt-[-20px] '
                   src={pc.src}
