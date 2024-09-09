@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
     return (
-        <nav id='nav' className=' fixed z-[1000] sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
+        <nav id='nav' className=' z-[1000] sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
 
             <div className=' sm:flex sm:flex-row'>
 

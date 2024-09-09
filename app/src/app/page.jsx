@@ -74,9 +74,9 @@ export default function Home() {
             <p className='text-[20px] font-bold'>Ürüne Git</p>
           </button>
 
-          <h1 id='h1'
+          <h1
             className='text-[24px] mt-[100px] ml-[105px] sm:text-[80px] sm:mt-[200px] sm:ml-[200px] absolute font-bold'
-          ><span className='text-[30px] sm:ml-6  sm:text-[80px] mt-[150px] ml-15'>ACER Nitro 5</span> <br /> <span className='ml-2'>12% İndirimde!</span></h1>
+          ><span id='h1' className='text-[30px] sm:ml-6  sm:text-[80px] mt-[150px] ml-15'>ACER Nitro 5</span> <br /> <span className='ml-2'>12% İndirimde!</span></h1>
           <h2 id='h2'
             className='text-[30px] ml-[130px] mt-[180px] sm:text-[120px] text-yellow-500 font-bold sm:mt-[460px] sm:ml-[230px] absolute'
           >28.999₺</h2>
@@ -110,7 +110,7 @@ export default function Home() {
                   src={tshirt1.src}
                   alt=""
                 /></div>
-              <h1 id='h4' className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Chuba Tshirt /
+              <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> <span id='h4'>Chuba Tshirt</span> /
                 <span id='h5' className='sm:text-[28px] text-yellow-500'> 640₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
@@ -220,7 +220,7 @@ export default function Home() {
                 className='mt-[560px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty onClick={handleAddToFavorites1} className='absolute size-[50px] sm:mt-[420px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[490px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
 
