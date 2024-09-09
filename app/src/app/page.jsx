@@ -31,7 +31,7 @@ export default function Home() {
 
     const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
     favorites.push({ image: productImage, price: productPrice, name: productName });
-    localStorage.setItem('favorites', JSON.stringify(favorites));
+    localStorage.clear('favorites', JSON.stringify(favorites));
 
     window.location.href = '/favoriler';
     alert("Favorilere eklendi!")

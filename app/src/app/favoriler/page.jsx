@@ -26,7 +26,7 @@ const FavoritesPage = () => {
 
         </div>
       ))}
-      {favorites.length === 0 && <p className='text-[40px] mt-[100px] ml-10'>Favorilere eklenmiş ürün bulunmamaktadır.</p>}
+      {favorites.length === 0 && <p className='text-[16px] ml-11  sm:text-[40px] mt-[70px] sm:mt-[100px] sm:ml-10'>Favorilere eklenmiş ürün bulunmamaktadır.</p>}
     </div>
 
 
