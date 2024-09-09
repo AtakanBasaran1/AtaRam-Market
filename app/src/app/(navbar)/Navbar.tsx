@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
     return (
-        <nav id='nav' className=' z-[1000] sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
+        <nav id='nav' className=' z-[1000] fixed sm:absolute sm:flex sm:flex-row sm:animate-slide-in-from-left'>
 
             <div className=' sm:flex sm:flex-row'>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
                 </div>
 
                 {sepet ? (
-                    <div id='sepet' className='w-[400px] absolute sm:relative border-2 mt-[-35px]  border-gray-700 h-[660px] ml-[-20px] z-50 bg-black sm:rounded-b-[80px] sm:w-[1540px] sm:h-[750px] sm:ml-[-1365px] sm:mt-[-10px]'>
+                    <div id='sepet' className='w-[400px] fixed absolute sm:relative border-2 mt-[-35px]  border-gray-700 h-[660px] ml-[-20px] z-[1000] bg-black sm:rounded-b-[80px] sm:w-[1540px] sm:h-[750px] sm:ml-[-1365px] sm:mt-[-10px]'>
                         <div className='fixed'>
                             <IoIosClose
                                 onClick={sepetClose}

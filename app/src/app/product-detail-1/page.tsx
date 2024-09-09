@@ -356,7 +356,7 @@ const page = () => {
 
 
             {taksit ? (
-                <div id='sol' className='mt-[870px] w-[300px] ml-8 sm:mt-[1050px] sm:w-[1230px] sm:ml-[150px] border-2 h-[1900px] sm:h-[670px] sm:h-[800px] sm:text-[18px] font-bold flex flex-col sm:flex-row border-gray-500 rounded-[10px]'>
+                <div id='sol' className='mt-[870px] w-[300px] ml-8 sm:mt-[1050px] sm:w-[1230px] sm:ml-[150px] border-none sm:border-2 h-[1900px] sm:h-[670px] sm:h-[800px] sm:text-[18px] font-bold flex flex-col sm:flex-row border-gray-500 rounded-[10px]'>
 
                     <aside className='flex flex-col sm:flex-row gap-[65px]'>
                         <div className='border-2  ml-0 sm:ml-10 mt-0 sm:mt-10 h-[590px] rounded-[5px]'>
