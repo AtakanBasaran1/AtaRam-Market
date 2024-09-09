@@ -108,8 +108,8 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
-              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites2} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites2} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
@@ -127,8 +127,8 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
-              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites3} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites3} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
 
@@ -157,8 +157,8 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[310px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
-              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[375px] cursor-pointer text-red-600  ml-[330px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites4} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[310px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites4} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[375px] cursor-pointer text-red-600  ml-[330px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
@@ -176,8 +176,8 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
-              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites5} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites5} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
@@ -195,8 +195,8 @@ export default function Home() {
                 className='mt-[560px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
-              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites6} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites6} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
 
