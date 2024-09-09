@@ -17,6 +17,7 @@ import { RiArticleLine } from "react-icons/ri";
 import { TbArticle } from "react-icons/tb";
 import { CiInboxIn } from "react-icons/ci";
 import { FcCheckmark } from "react-icons/fc";
+import { fail } from 'assert';
 
 
 const page = () => {
@@ -39,9 +40,9 @@ const page = () => {
         }
     }
 
-    const [ürünAciklamasi, setÜrünAciklamasi] = useState(false)
+    const [ürünAciklamasi, setÜrünAciklamasi] = useState(true)
 
-    const [degerlendirmeler, setDegerlendirmeler] = useState(true)
+    const [degerlendirmeler, setDegerlendirmeler] = useState(false)
 
     const [taksit, setTaksit] = useState(false)
 
@@ -355,12 +356,12 @@ const page = () => {
 
 
             {taksit ? (
-                <div id='sol' className='mt-[1050px] border-gray-500 w-[1230px] ml-[150px] border-2 h-[670px] text-[18px] font-bold flex flex-row rounded-[10px]'>
+                <div id='sol' className='mt-[870px] w-[300px] ml-8 sm:mt-[1050px] sm:w-[1230px] sm:ml-[150px] border-2 h-[1900px] sm:h-[670px] sm:h-[800px] sm:text-[18px] font-bold flex flex-col sm:flex-row border-gray-500 rounded-[10px]'>
 
-                    <aside className='flex flex-row gap-[65px]'>
-                        <div className='border-2  ml-10 mt-10 h-[590px] rounded-[5px]'>
+                    <aside className='flex flex-col sm:flex-row gap-[65px]'>
+                        <div className='border-2  ml-0 sm:ml-10 mt-0 sm:mt-10 h-[590px] rounded-[5px]'>
 
-                            <div className='border-b-2  w-[310px] flex justify-center'>
+                            <div className='border-b-2 w-[295px] sm:w-[310px] flex justify-center'>
                                 <img className='w-[70px]' src={world.src} alt="" />
                             </div>
 
@@ -431,9 +432,9 @@ const page = () => {
                             </div>
                         </div>
 
-                        <div className='border-2 ml-10 mt-10 h-[590px] rounded-[5px]'>
+                        <div className='border-2  ml-0 sm:ml-10 mt-0 sm:mt-10 h-[590px] rounded-[5px]'>
 
-                            <div className='border-b-2  w-[310px] flex justify-center'>
+                            <div className='border-b-2  w-[295px] sm:w-[310px] flex justify-center'>
                                 <img className='w-[70px] mt-[-6px]' src={garanti.src} alt="" />
                             </div>
 
@@ -507,9 +508,9 @@ const page = () => {
 
 
 
-                        <div className='border-2 ml-10 mt-10 h-[590px] rounded-[5px]'>
+                        <div className='border-2  ml-0 sm:ml-10 mt-0 sm:mt-10 h-[590px] rounded-[5px]'>
 
-                            <div className='border-b-2  w-[310px] flex justify-center'>
+                            <div className='border-b-2  w-[295px] sm:w-[310px] flex justify-center'>
                                 <img className='w-[75px] mt-[18px] relative top-[-8px]' src={maximum.src} alt="" />
                             </div>
 
@@ -586,50 +587,50 @@ const page = () => {
             ) : null}
 
             {iade ? (
-                <div id='sağ' className='mt-[1050px] border-gray-500 w-[1230px] ml-[150px] border-2 h-[620px] text-[18px] font-bold flex flex-row rounded-[10px]'>
+                <div id='sağ' className='mt-[870px] w-[300px] ml-8 sm:mt-[1050px] sm:w-[1230px] sm:ml-[150px] border-2 h-[980px]  sm:h-[630px]  sm:text-[18px] font-bold flex flex-col sm:flex-row border-gray-500 rounded-[10px]'>
 
                     <aside>
 
                         <h1 className='ml-10 mt-7 text-[20px] text-yellow-300'>Kolay İade Süreci Nasıl Başlatılır?</h1>
 
                         <div className='flex flex-row'>
-                            <GoInbox className='text-yellow-500 size-[40px] ml-9 mt-10' />
-                            <h1 className='mt-12 ml-6 text-gray-300'>İade talebi oluştur</h1>
-                            <span className='text-normal mt-[50px] text-[15px] text-gray-500 ml-[20px] '>Siparişlerim sayfasından iade etmek istediğin ürünü bul ve <a href='' className='text-gray-300'> Kolay iade et</a> 'e tıkla.</span>
+                            <GoInbox className='text-yellow-500 size-[80px] ml-4 sm:size-[40px] sm:ml-9 mt-8 sm:mt-10' />
+                            <h1 className='mt-12 ml-6 text-gray-300 text-[12px] sm:text-[18px]'>İade talebi oluştur</h1>
+                            <span className='text-normal mt-[50px] text-[12px] sm:text-[15px] text-gray-500 ml-[20px] '>Siparişlerim sayfasından iade etmek istediğin ürünü bul ve <a href='' className='text-gray-300'> Kolay iade et</a> 'e tıkla.</span>
                         </div>
                         <div className='flex flex-row'>
-                            <RiArticleLine className='text-orange-500 size-[40px] ml-9 mt-10' />
-                            <h1 className='mt-12 ml-6 text-gray-300'>İade yöntemini seç</h1>
-                            <span className='text-normal mt-[50px] text-[15px] text-gray-500 ml-[20px] '>İade etmek istediğin ürünü kapında iade ile kolayca iade et ya da Hepsimat noktasına iade ve kargoya teslim seçeneklerinden birini seç.
+                            <RiArticleLine className='text-orange-500 size-[160px] ml-3 sm:size-[40px] sm:ml-9 mt-[-5px] sm:mt-10' />
+                            <h1 className='mt-12 ml-5 text-gray-300 text-[12px] sm:text-[18px]'>İade yöntemini seç</h1>
+                            <span className='text-normal mt-[50px] text-[12px] sm:text-[15px] text-gray-500 ml-[20px] '>İade etmek istediğin ürünü kapında iade ile kolayca iade et ya da Hepsimat noktasına iade ve kargoya teslim seçeneklerinden birini seç.
                             </span>
                         </div>
                         <div className='flex flex-row'>
-                            <TbArticle className='text-blue-500 size-[40px] ml-9 mt-10' />
-                            <h1 className='mt-12 ml-6 text-gray-300'>Kargo kodunu not et
+                            <TbArticle className='text-yellow-500 size-[80px] ml-4 sm:size-[40px] sm:ml-9 mt-9 sm:mt-10' />
+                            <h1 className='mt-12 ml-4 text-gray-300 text-[12px] sm:text-[18px]'>Kargo kodunu not et
                             </h1>
-                            <span className='text-normal mt-[50px] text-[15px] text-gray-500 ml-[20px] '>Yönlendirmeleri tamamla ve ekranda çıkan kargo gönderi kodunu not et.
+                            <span className='text-normal mt-[50px] text-[12px] sm:text-[15px] text-gray-500 ml-[20px] '>Yönlendirmeleri tamamla ve ekranda çıkan kargo gönderi kodunu not et.
 
 
                             </span>
                         </div>
                         <div className='flex flex-row'>
-                            <CiInboxIn className='text-red-500 size-[40px] ml-9 mt-10' />
-                            <h1 className='mt-12 ml-6 text-gray-300'>Ürünü teslim et
+                            <CiInboxIn className='text-yellow-500 size-[110px] ml-4 sm:size-[40px] sm:ml-9 mt-9 sm:mt-10' />
+                            <h1 className='mt-[70px] sm:mt-12 ml-3 text-gray-300 text-[12px] sm:text-[18px]'>Ürünü teslim et
                             </h1>
-                            <span className='text-normal mt-[50px] text-[15px] text-gray-500 ml-[20px] '>Ürünü tüm aparatlarıyla eksiksiz bir şekilde paketle ve kargo gönderi koduyla teslim et.
+                            <span className='text-normal mt-[70px] sm:mt-[50px] text-[12px] sm:text-[15px] text-gray-500 ml-[20px]  '>Ürünü tüm aparatlarıyla eksiksiz bir şekilde paketle ve kargo gönderi koduyla teslim et.
                             </span>
                         </div>
                         <div className='flex flex-row'>
-                            <FcCheckmark className='text-gray-500 size-[40px] ml-9 mt-10' />
-                            <h1 className='mt-12 ml-6 text-gray-300'>İadeniz onaylansın
+                            <FcCheckmark className='text-yellow-500 size-[120px] ml-4 sm:size-[40px] sm:ml-9 mt-9 sm:mt-10' />
+                            <h1 className='mt-[80px] sm:mt-12 ml-4 text-gray-300 text-[12px] sm:text-[18px]'>İadeniz onaylansın
 
                             </h1>
-                            <span className='text-normal mt-[50px] text-[15px] text-gray-500 ml-[20px] '>Ürünü tüm aparatlarıyla eksiksiz bir şekilde paketle ve kargo gönderi koduyla teslim et.
+                            <span className='text-normal mt-[70px] sm:mt-[50px] text-[12px] sm:text-[15px] text-gray-500 ml-[10px] sm:ml-[20px]   '>Ürünü tüm aparatlarıyla eksiksiz bir şekilde paketle ve kargo gönderi koduyla teslim et.
 
                             </span>
                         </div>
-                        <hr className='w-[1100px] ml-[60px] mt-8 border-gray-800' />
-                        <p className='text-[15px] text-gray-500 ml-9 mt-5 w-[1150px]'>* Bu üründen toplu/çoklu sipariş verilmesi, siparişin ticari alım olduğunun tespit edilmesi veya farklı kullanıcı adı, rumuz, kimlik ve iletişim bilgileri ile verilen siparişlerde fatura adresi, teslimat adresi, ödeme bilgisi, ticari unvanı, vergi numarası gibi unsurların aynı olması durumunda Hepsiburada siparişleri iptal etme hakkını saklı tutar.</p>
+                        <hr className='w-[250px] ml-[23px] sm:w-[1100px] sm:ml-[60px] mt-8 border-gray-800' />
+                        <p className='text-[12px] w-[260px] ml-5 sm:text-[15px] text-gray-500 sm:ml-9 mt-5 sm:w-[1150px]'>* Bu üründen toplu/çoklu sipariş verilmesi, siparişin ticari alım olduğunun tespit edilmesi veya farklı kullanıcı adı, rumuz, kimlik ve iletişim bilgileri ile verilen siparişlerde fatura adresi, teslimat adresi, ödeme bilgisi, ticari unvanı, vergi numarası gibi unsurların aynı olması durumunda Hepsiburada siparişleri iptal etme hakkını saklı tutar.</p>
                     </aside>
 
 

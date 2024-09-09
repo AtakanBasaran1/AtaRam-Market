@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react'
-import logo from '../img/logo.png'
 import Link from 'next/link'
 import { IoPersonOutline } from "react-icons/io5";
 import { CiShoppingBasket } from "react-icons/ci";

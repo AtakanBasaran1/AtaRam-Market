@@ -8,34 +8,10 @@ import tshirt3 from './img/tshirt3.png'
 import pc from './img/pc.png'
 import kahve from './img/kahve-m.png'
 import sort from './img/şort.png'
-import { Container } from 'postcss';
+import { IoIosHeartEmpty } from "react-icons/io";
 
 
 export default function Home() {
-  const [products, setProducts] = useState<any[]>([]);
-
-  interface Product {
-    id: number;
-    name: string;
-    title: string;
-    description: string;
-  }
-
-  // const [product, setProduct] = useState<Product | null>(null);
-
-  // useEffect(() => {
-  //   const productList = async () => {
-  //     try {
-  //       const response = await fetch("https://api.example.com/products");
-  //       const data: Product = await response.json();
-  //       setProduct(data);
-  //     } catch (error) {
-  //       console.error("Ürün bilgilerini alırken bir hata oluştu:", error);
-  //     }
-  //   };
-
-  //   productList();
-  // }, []);
 
   const product1Detail = () => {
     window.location.href = "/product-detail-1"
@@ -47,21 +23,60 @@ export default function Home() {
 
 
 
+  const handleAddToFavorites = () => {
+    const productImage = document.getElementById('pc').src;
+    const productName = document.getElementById('h1').innerText;
+    const productPrice = document.getElementById('h2').innerText;
+
+
+    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    favorites.push({ image: productImage, price: productPrice, name: productName });
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+
+    window.location.href = '/favoriler';
+    alert("Favorilere eklendi!")
+  };
+
+
+
+
+  const handleAddToFavorites1 = () => {
+    const productImage = document.getElementById('pc1').src;
+    const productPrice = document.getElementById('h5').innerText;
+    const productName = document.getElementById('h4').innerText;
+
+
+    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    favorites.push({ image: productImage, price: productPrice, name: productName });
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+
+    window.location.href = '/favoriler';
+    alert("Favorilere eklendi!")
+  };
+
+
+
+
+
+
 
   return (
     <div className='overflow-hidden	'>
       <div>
         <aside className='mt-[0px]'>
-          < div className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px] sm:transition-transform sm:duration-500 sm:ease-in-out transform sm:hover:scale-105 cursor-pointer' >
+          < div id='ss' className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px]  ' >
             <img id='pc'
-              className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px] '
+              className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px]'
               src={pc2.src}
               alt="" />
+            <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[-60px] cursor-pointer text-red-600  ml-[400px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
           </ div>
-          <button id='button' onClick={product1Detail}
+
+          <button id='sss' onClick={product1Detail}
             className='w-[200px] h-[30px] mt-[480px] ml-[85px] sm:mt-[600px] absolute sm:w-[500px] border-gray-700 rounded-[30px] sm:h-[50px] hover:bg-blue-400 bg-blue-800400 bg-blue-800 hover:border-none sm:ml-[850px]'>
             <p className='text-[20px] font-bold'>Ürüne Git</p>
           </button>
+
           <h1 id='h1'
             className='text-[24px] mt-[100px] ml-[105px] sm:text-[80px] sm:mt-[200px] sm:ml-[200px] absolute font-bold'
           ><span className='text-[30px] sm:ml-6  sm:text-[80px] mt-[150px] ml-15'>ACER Nitro 5</span> <br /> <span className='ml-2'>12% İndirimde!</span></h1>
@@ -91,24 +106,27 @@ export default function Home() {
           <div className='flex flex-col sm:flex-row'>
 
             <div className='mt-[-100px] ml-[-80px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
+                  id='pc1'
                   src={tshirt1.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Chuba Tshirt /
-                <span className='sm:text-[28px] text-yellow-500'> 640₺</span>
+              <h1 id='h4' className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Chuba Tshirt /
+                <span id='h5' className='sm:text-[28px] text-yellow-500'> 640₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
-              <button
+              <button id='h2' onClick={handleAddToFavorites1}
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
+              <IoIosHeartEmpty onClick={handleAddToFavorites1} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={sort.src}
@@ -122,10 +140,11 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={tshirt3.src}
@@ -139,6 +158,7 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
 
@@ -153,9 +173,9 @@ export default function Home() {
           <div className='flex flex-col sm:flex-row'>
 
             <div className='mt-[-200px] sm:mt-[-100px] ml-[-80px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
-                  className='w-[200px] ml-[100px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
+                  className='w-[200px] ml-[100px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[40px] sm:mt-[-20px] '
                   src={kahve.src}
                   alt=""
                 /></div>
@@ -167,13 +187,14 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[450px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
-                  src={tshirt3.src}
+                  src={tshirt2.src}
                   alt=""
                 /></div>
               <h1 className='text-[16px] mt-[590px] ml-[212px] sm:mt-[760px] text-white sm:ml-[280px] absolute sm:text-[24px] font-bold'> United Tshirt V2 /
@@ -184,10 +205,11 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
-              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] transition-transform duration-500 ease-in-out transform sm:hover:scale-105 cursor-pointer'>
+              <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[340px] sm:h-[250px] sm:ml-[10px] sm:mt-[-20px] '
                   src={pc.src}
@@ -201,6 +223,7 @@ export default function Home() {
                 className='mt-[560px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[490px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
 
