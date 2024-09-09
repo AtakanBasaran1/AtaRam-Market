@@ -11,10 +11,10 @@ const FavoritesPage = () => {
   }, []);
 
   return (
-    <div className='flex flex-col sm:flex-row mt-[150px] absolute flex-wrap w-[1800px]'>
-      <h1 className='mt-[-20px] w-[235px] absolute  ml-[75px] text-[40px] border-b-2 flex justify-start border-blue-500 font-bold '>Favori Ürünler</h1>
+    <div className='flex flex-col sm:flex-row mt-[150px]  absolute flex-wrap w-[1600px]'>
+      <h1 id='s' className='mt-[-20px] w-[235px] absolute ml-[70px]  sm:ml-[70px] text-[40px] border-b-2 flex justify-start border-blue-500 font-bold '>Favori Ürünler</h1>
       {favorites.map((item, index) => (
-        <div className='mt-[100px] ml-[65px]' key={index}>
+        <div id='ss' className='mt-[100px] ml-[60px]' key={index}>
 
           <img className='w-[250px] mr-[60px] border-t-2 border-r-2 border-blue-700 border-l-2 p-8 rounded-[50px] h-[250px]' src={item.image} alt={item.name} />
           <h2 className='text-[18px] text-white ml-8 font-bold mt-7'>{item.name}</h2>
