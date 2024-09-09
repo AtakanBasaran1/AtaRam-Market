@@ -184,7 +184,7 @@ export default function Home() {
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty className='absolute size-[50px] sm:mt-[420px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty className='absolute size-[50px] sm:mt-[410px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
@@ -220,7 +220,7 @@ export default function Home() {
                 className='mt-[560px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] mt-[420px] cursor-pointer text-red-600  ml-[490px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] sm:mt-[410px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[490px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
             </div>
 
 
