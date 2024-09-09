@@ -1,5 +1,4 @@
 "use client";
-import axios from 'axios';
 import { useEffect, useState } from 'react';
 import pc2 from './img/pc2.png'
 import tshirt1 from './img/tshirt1.png'
@@ -9,6 +8,8 @@ import pc from './img/pc.png'
 import kahve from './img/kahve-m.png'
 import sort from './img/şort.png'
 import { IoIosHeartEmpty } from "react-icons/io";
+import { IoHeartDislikeOutline } from "react-icons/io5";
+import { handleAddToFavorites, handleRemoveToFavorites, handleAddToFavorites1, handleRemoveToFavorites1, handleAddToFavorites2, handleRemoveToFavorites2, handleAddToFavorites3, handleRemoveToFavorites3, handleAddToFavorites4, handleRemoveToFavorites4, handleAddToFavorites5, handleRemoveToFavorites5, handleAddToFavorites6, handleRemoveToFavorites6 } from './utils/function'
 
 
 export default function Home() {
@@ -21,52 +22,19 @@ export default function Home() {
     window.location.href = "/tüm-ürünler"
   }
 
-
-
-  const handleAddToFavorites = () => {
-    const productImage = document.getElementById('pc').src;
-    const productName = document.getElementById('h1').innerText;
-    const productPrice = document.getElementById('h2').innerText;
-
-
-    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-    favorites.push({ image: productImage, price: productPrice, name: productName });
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-
-    window.location.href = '/favoriler';
-    alert("Favorilere eklendi!")
-  };
-
-
-
-
-  const handleAddToFavorites1 = () => {
-    const productImage = document.getElementById('pc1').src;
-    const productPrice = document.getElementById('h5').innerText;
-    const productName = document.getElementById('h4').innerText;
-
-
-    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-    favorites.push({ image: productImage, price: productPrice, name: productName });
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-
-    window.location.href = '/favoriler';
-    alert("Favorilere eklendi!")
-  };
-
-
-
-
   return (
     <div className='overflow-hidden	'>
+
+
       <div>
         <aside className='mt-[0px]'>
-          < div id='ss' className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px]  ' >
-            <img id='pc'
+          <div id='ss' className='w-[500px] h-[400px] p-10 rounded-[30px] border-gray-700 flex justify-center ml-[850px] absolute mt-[180px]  ' >
+            <img id='img1'
               className='w-[250px] ml-[-1830px] sm:ml-[0px] mt-[35px] h-[200px] sm:w-[700px] absolute sm:h-[380px] sm:mt-[-40px]'
               src={pc2.src}
               alt="" />
-            <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] sm:mt-[-60px] cursor-pointer mt-[20px] ml-[-1630px] text-red-600  sm:ml-[400px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+            <IoIosHeartEmpty id='but' onClick={handleAddToFavorites} className='absolute sm:size-[40px] border-red-700 sm:mt-[-60px] mt-[20px] cursor-pointer text-red-600 size-[30px] ml-[-1665px] sm:ml-[370px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+            <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites} className='absolute size-[30px] ml-[-1620px] sm:size-[40px] border-red-700 sm:mt-[-20px] mt-[50px] cursor-pointer text-red-600  sm:ml-[420px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
           </ div>
 
           <button id='sss' onClick={product1Detail}
@@ -106,56 +74,61 @@ export default function Home() {
               <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
                 <img
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
-                  id='pc1'
+                  id='img2'
                   src={tshirt1.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> <span id='h4'>Chuba Tshirt</span> /
-                <span id='h5' className='sm:text-[28px] text-yellow-500'> 640₺</span>
+              <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> <span id='h3'>Chuba Tshirt</span> /
+                <span id='h4' className='sm:text-[28px] text-yellow-500'> 640₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
-              <button id='h2'
+              <button
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty onClick={handleAddToFavorites1} className='absolute size-[50px] sm:mt-[420px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+
+
 
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
               <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
-                <img
+                <img id='img3'
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={sort.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[590px] ml-[235px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'> Fluer Şort /
-                <span className='sm:text-[28px] text-yellow-500'> 450₺</span>
+              <h1 className='text-[16px] mt-[590px] ml-[235px] sm:mt-[760px] text-white sm:ml-[315px] absolute sm:text-[24px] font-bold'> <span id='h5'>Fluer Şort</span> /
+                <span id='h6' className='sm:text-[28px] text-yellow-500'> 450₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
               <button
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty className='absolute size-[50px] sm:mt-[420px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
               <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
-                <img
+                <img id='img4'
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={tshirt3.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'>  United Tshirt /
-                <span className='sm:text-[28px] text-yellow-500'> 719₺</span>
+              <h1 className='text-[16px] mt-[590px] ml-[225px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'>  <span id='h7'>United Tshirt</span> /
+                <span id='h8' className='sm:text-[28px] text-yellow-500'> 719₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
               <button
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty className='absolute size-[50px] sm:mt-[420px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
 
@@ -171,56 +144,59 @@ export default function Home() {
 
             <div className='mt-[-200px] sm:mt-[-100px] ml-[-80px]'>
               <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
-                <img
+                <img id='img5'
                   className='w-[200px] ml-[100px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[40px] sm:mt-[-20px] '
                   src={kahve.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[590px] ml-[190px] sm:mt-[760px] text-white sm:ml-[250px] absolute sm:text-[24px] font-bold'> Philips Kahve Makinesi /
-                <span className='sm:text-[28px] text-yellow-500'> 1322₺</span>
+              <h1 className='text-[16px] mt-[590px] ml-[190px] sm:mt-[760px] text-white sm:ml-[250px] absolute sm:text-[24px] font-bold'> Philips <span id='h9'>Kahve Makinesi</span> /
+                <span id='h10' className='sm:text-[28px] text-yellow-500'> 1322₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
               <button
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty className='absolute size-[50px] sm:mt-[410px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[310px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[375px] cursor-pointer text-red-600  ml-[330px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:mt-[-100px] sm:ml-[460px]'>
               <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
-                <img
+                <img id='img6'
                   className='w-[200px] ml-[90px] mt-10 sm:w-[280px] sm:h-[300px] sm:ml-[10px] sm:mt-[-20px] '
                   src={tshirt2.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[590px] ml-[212px] sm:mt-[760px] text-white sm:ml-[280px] absolute sm:text-[24px] font-bold'> United Tshirt V2 /
-                <span className='sm:text-[28px] text-yellow-500'> 669₺</span>
+              <h1 className='text-[16px] mt-[590px] ml-[212px] sm:mt-[760px] text-white sm:ml-[280px] absolute sm:text-[24px] font-bold'> <span id='h11'>United Tshirt V2</span> /
+                <span id='h12' className='sm:text-[28px] text-yellow-500'> 669₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[620px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
               <button
                 className='mt-[640px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty className='absolute size-[50px] sm:mt-[420px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[470px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
             <div className='mt-[380px] ml-[-80px] sm:ml-[480px] sm:mt-[-100px]'>
               <div className='mt-[300px] ml-[100px]  sm:w-[400px] sm:h-[350px] sm:p-10 rounded-[30px] border-gray-700 flex justify-center sm:ml-[200px] absolute sm:mt-[400px] '>
-                <img
+                <img id='img7'
                   className='w-[200px] ml-[90px] mt-10 sm:w-[340px] sm:h-[250px] sm:ml-[10px] sm:mt-[-20px] '
                   src={pc.src}
                   alt=""
                 /></div>
-              <h1 className='text-[16px] mt-[510px] ml-[220px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'>  MSI Laptop /
-                <span className='sm:text-[28px] text-yellow-500'> 21.999₺</span>
+              <h1 className='text-[16px] mt-[510px] ml-[220px] sm:mt-[760px] text-white sm:ml-[300px] absolute sm:text-[24px] font-bold'>  <span id='h13'>MSI Laptop</span> /
+                <span id='h14' className='sm:text-[28px] text-yellow-500'> 21.999₺</span>
               </h1>
               <hr className='w-[160px] ml-[210px] mt-[540px] absolute sm:w-[208px] sm:mt-[810px] sm:ml-[300px]' />
               <button
                 className='mt-[560px] ml-[215px] w-[150px] sm:mt-[840px]  absolute sm:w-[160px] border-gray-700 rounded-[30px] sm:h-[40px] hover:bg-blue-400 bg-blue-800 hover:border-none sm:ml-[320px]'>
                 <p className='text-[18px] sm:text-[20px] font-bold'>Ürüne Git</p>
               </button>
-              <IoIosHeartEmpty onClick={handleAddToFavorites} className='absolute size-[50px] sm:mt-[410px] mt-[330px] cursor-pointer text-red-600  ml-[330px] sm:ml-[490px] z-50 border-2 bg-black border-white rounded-[300px] p-2 transition-transform duration-300 hover:scale-110' />
+              <IoIosHeartEmpty id='but' onClick={handleAddToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[410px] mt-[340px] cursor-pointer text-red-600  ml-[330px] sm:ml-[450px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
+              <IoHeartDislikeOutline id='but' onClick={handleRemoveToFavorites1} className='absolute size-[30px] sm:size-[40px] border-red-700 sm:mt-[450px] mt-[370px] cursor-pointer text-red-600  ml-[350px] sm:ml-[480px] z-50 border-2 bg-white rounded-[300px] p-1 transition-transform duration-300 hover:scale-110 hover:bg-red-600 hover:text-black hover:border-white' />
             </div>
 
 
