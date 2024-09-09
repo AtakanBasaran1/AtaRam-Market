@@ -11,8 +11,8 @@ const FavoritesPage = () => {
   }, []);
 
   return (
-    <div className='flex flex-row mt-[150px] absolute flex-wrap w-[1800px]'>
-      <h1 className='mt-[-20px] w-[235px] absolute  ml-[70px] text-[40px] border-b-2 flex justify-start border-blue-500 font-bold '>Favori Ürünler</h1>
+    <div className='flex flex-col sm:flex-row mt-[150px] absolute flex-wrap w-[1800px]'>
+      <h1 className='mt-[-20px] w-[235px] absolute  ml-[75px] text-[40px] border-b-2 flex justify-start border-blue-500 font-bold '>Favori Ürünler</h1>
       {favorites.map((item, index) => (
         <div className='mt-[100px] ml-[65px]' key={index}>
 
@@ -22,7 +22,7 @@ const FavoritesPage = () => {
 
         </div>
       ))}
-      {favorites.length === 0 && <p>Favorilere eklenmiş ürün bulunmamaktadır.</p>}
+      {favorites.length === 0 && <p className='text-[40px] mt-[100px] ml-10'>Favorilere eklenmiş ürün bulunmamaktadır.</p>}
     </div>
 
 
